@@ -458,7 +458,7 @@ A: 在 `index.html` 中搜索 `faq-item`，按照现有结构修改或添加新�
 
 ## 联系方式
 
-- **官网**：[shanpeibao.com](https://shanpeibao.com)
+- **官网**：[shanpeibao.net](https://shanpeibao.net)
 - **下载**：[bmdyk.cn](https://bmdyk.cn)
 
 ---
