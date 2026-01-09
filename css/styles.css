@@ -1,0 +1,605 @@
+/* 闪配宝官网样式 */
+
+/* ===== 本地化字体定义 ===== */
+/* 使用 Fontsource Noto Sans SC 字体 - 按需加载中文字符子集 */
+@font-face {
+    font-family: 'Noto Sans SC';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/noto-sans-sc-chinese-simplified-400-normal.woff2') format('woff2'),
+         url('../fonts/noto-sans-sc-119-400-normal.woff2') format('woff2');
+    unicode-range: U+4E00-9FFF, U+3400-4DBF, U+20000-2A6DF, U+2A700-2B73F, U+2B740-2B81F, U+2B820-2CEAF, U+F900-FAFF, U+2F800-2FA1F;
+}
+
+@font-face {
+    font-family: 'Noto Sans SC';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('../fonts/noto-sans-sc-chinese-simplified-500-normal.woff2') format('woff2'),
+         url('../fonts/noto-sans-sc-119-500-normal.woff2') format('woff2');
+    unicode-range: U+4E00-9FFF, U+3400-4DBF, U+20000-2A6DF, U+2A700-2B73F, U+2B740-2B81F, U+2B820-2CEAF, U+F900-FAFF, U+2F800-2FA1F;
+}
+
+@font-face {
+    font-family: 'Noto Sans SC';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/noto-sans-sc-chinese-simplified-700-normal.woff2') format('woff2'),
+         url('../fonts/noto-sans-sc-119-700-normal.woff2') format('woff2');
+    unicode-range: U+4E00-9FFF, U+3400-4DBF, U+20000-2A6DF, U+2A700-2B73F, U+2B740-2B81F, U+2B820-2CEAF, U+F900-FAFF, U+2F800-2FA1F;
+}
+
+@font-face {
+    font-family: 'Noto Sans SC';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('../fonts/noto-sans-sc-chinese-simplified-900-normal.woff2') format('woff2'),
+         url('../fonts/noto-sans-sc-119-900-normal.woff2') format('woff2');
+    unicode-range: U+4E00-9FFF, U+3400-4DBF, U+20000-2A6DF, U+2A700-2B73F, U+2B740-2B81F, U+2B820-2CEAF, U+F900-FAFF, U+2F800-2FA1F;
+}
+
+/* 拉丁字符回退 */
+@font-face {
+    font-family: 'Noto Sans SC';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/noto-sans-sc-latin-400-normal.woff2') format('woff2'),
+         url('../fonts/noto-sans-sc-21-400-normal.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Noto Sans SC';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('../fonts/noto-sans-sc-latin-500-normal.woff2') format('woff2'),
+         url('../fonts/noto-sans-sc-21-500-normal.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Noto Sans SC';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/noto-sans-sc-latin-700-normal.woff2') format('woff2'),
+         url('../fonts/noto-sans-sc-21-700-normal.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Noto Sans SC';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('../fonts/noto-sans-sc-latin-900-normal.woff2') format('woff2'),
+         url('../fonts/noto-sans-sc-21-900-normal.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* ===== CSS 变量（与 Tailwind 配置同步） ===== */
+:root {
+    --flash-orange: #F97316;
+    --energy-yellow: #FACC15;
+    --dark-blue: #0F172A;
+    --slate-dark: #1E293B;
+    --slate-mid: #334155;
+}
+
+/* ===== 基础样式 ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ===== 动画定义 ===== */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 20px rgba(249, 115, 22, 0.3); }
+    50% { box-shadow: 0 0 40px rgba(249, 115, 22, 0.6); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* ===== 导航样式 ===== */
+#navbar {
+    background: transparent;
+}
+
+#navbar.scrolled {
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.nav-link {
+    color: #94A3B8;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #F97316;
+}
+
+/* ===== 按钮样式 ===== */
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #F97316, #FACC15);
+    color: #0F172A;
+    font-weight: 700;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(249, 115, 22, 0.4);
+}
+
+.btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: #F97316;
+    font-weight: 700;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    border: 2px solid #F97316;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-secondary:hover {
+    background: rgba(249, 115, 22, 0.1);
+    transform: translateY(-2px);
+}
+
+/* ===== Hero 区域 ===== */
+.hero-bg {
+    background: 
+        radial-gradient(ellipse at 20% 50%, rgba(249, 115, 22, 0.15) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 20%, rgba(250, 204, 21, 0.1) 0%, transparent 40%),
+        radial-gradient(ellipse at 50% 100%, rgba(249, 115, 22, 0.1) 0%, transparent 50%);
+}
+
+.hero-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+    background-size: 50px 50px;
+}
+
+/* ===== 标签样式 ===== */
+.tag-highlight {
+    display: inline-block;
+    background: linear-gradient(135deg, rgba(249, 115, 22, 0.2), rgba(250, 204, 21, 0.2));
+    border: 1px solid rgba(249, 115, 22, 0.3);
+    color: #FACC15;
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+}
+
+.tag-trust {
+    display: inline-flex;
+    align-items: center;
+    color: #22C55E;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+/* ===== 手机样机 ===== */
+.phone-mockup {
+    width: 280px;
+    height: 560px;
+    background: linear-gradient(135deg, #1E293B, #334155);
+    border-radius: 40px;
+    padding: 12px;
+    box-shadow: 
+        0 25px 50px rgba(0, 0, 0, 0.5),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.phone-screen {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+/* ===== 章节标题 ===== */
+.section-title {
+    font-size: 2rem;
+    font-weight: 900;
+    background: linear-gradient(135deg, #F97316, #FACC15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .section-title {
+        font-size: 2.5rem;
+    }
+}
+
+.section-desc {
+    color: #94A3B8;
+    font-size: 1.125rem;
+}
+
+/* ===== 特性卡片 ===== */
+.feature-card {
+    background: #1E293B;
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(249, 115, 22, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* ===== 优势卡片 ===== */
+.advantage-card {
+    background: #1E293B;
+    border-radius: 1rem;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.advantage-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.advantage-number {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    font-weight: 900;
+    color: rgba(249, 115, 22, 0.1);
+}
+
+/* ===== 对比表格 ===== */
+.compare-table {
+    background: #1E293B;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.compare-table th,
+.compare-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #334155;
+}
+
+.compare-table th {
+    background: #0F172A;
+    font-weight: 600;
+}
+
+.compare-table tbody tr:hover {
+    background: rgba(249, 115, 22, 0.05);
+}
+
+.highlight-cell {
+    color: #F97316;
+    font-weight: 600;
+    text-align: center;
+    background: rgba(249, 115, 22, 0.1);
+}
+
+/* ===== 功能卡片 ===== */
+.function-card {
+    background: #1E293B;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.function-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.function-icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+/* ===== 步骤卡片 ===== */
+.step-card {
+    background: #1E293B;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: linear-gradient(135deg, #F97316, #FACC15);
+    color: #0F172A;
+    font-weight: 900;
+    border-radius: 9999px;
+    margin-bottom: 1rem;
+}
+
+/* ===== 验证卡片 ===== */
+.verify-card {
+    background: #1E293B;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.verify-step {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    background: linear-gradient(135deg, #22C55E, #16A34A);
+    color: white;
+    font-weight: 900;
+    font-size: 1.25rem;
+    border-radius: 9999px;
+    margin-bottom: 1rem;
+}
+
+/* ===== 安全卡片 ===== */
+.security-card {
+    background: #1E293B;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.security-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.security-icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+/* ===== FAQ 样式 ===== */
+.faq-item {
+    background: #1E293B;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 1.5rem;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+    background: rgba(249, 115, 22, 0.1);
+}
+
+.faq-icon {
+    transition: transform 0.3s ease;
+    color: #F97316;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
+    padding: 0 1.5rem 1.25rem;
+}
+
+.faq-answer p {
+    color: #94A3B8;
+    line-height: 1.7;
+}
+
+/* ===== 响应式优化 ===== */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .phone-mockup {
+        width: 200px;
+        height: 400px;
+    }
+    
+    .compare-table {
+        font-size: 0.75rem;
+    }
+    
+    .compare-table th,
+    .compare-table td {
+        padding: 0.5rem 0.375rem;
+        white-space: nowrap;
+    }
+    
+    /* 表格横向滚动优化 */
+    .overflow-x-auto {
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+    }
+    
+    /* 表格第一列固定 */
+    .compare-table th:first-child,
+    .compare-table td:first-child {
+        position: sticky;
+        left: 0;
+        background: #1E293B;
+        z-index: 1;
+    }
+    
+    .compare-table th:first-child {
+        background: #0F172A;
+    }
+}
+
+/* ===== 滚动条美化 ===== */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0F172A;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+}
+
+/* ===== 选中文本样式 ===== */
+::selection {
+    background: rgba(249, 115, 22, 0.3);
+    color: white;
+}
+
+/* ===== 交易案例Tab样式 ===== */
+.case-tab {
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #94a3b8;
+    background: transparent;
+    border: 1px solid #334155;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.case-tab:hover {
+    color: #ffffff;
+    border-color: #F97316;
+}
+
+.case-tab.active {
+    color: #ffffff;
+    background: linear-gradient(to right, #F97316, #FACC15);
+    border-color: transparent;
+}
+
+.case-content {
+    animation: fadeIn 0.3s ease;
+}
+
+.case-content.hidden {
+    display: none;
+}
+
+/* ===== FAQ Tab样式 ===== */
+.faq-tab {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #94a3b8;
+    background: #1E293B;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.faq-tab:hover {
+    color: #ffffff;
+    background: #334155;
+}
+
+.faq-tab.active {
+    color: #ffffff;
+    background: #F97316;
+}
+
+.faq-category {
+    animation: fadeIn 0.3s ease;
+}
+
+.faq-category.hidden {
+    display: none;
+}
