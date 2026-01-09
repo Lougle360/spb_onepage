@@ -1,0 +1,44 @@
+# 闪配宝官网 robots.txt
+# https://shanpeibao.com/
+
+User-agent: *
+Allow: /
+
+# 允许所有搜索引擎爬虫
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Sogou web spider
+Allow: /
+
+User-agent: 360Spider
+Allow: /
+
+# AI 搜索引擎
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# 禁止爬取的路径
+Disallow: /node_modules/
+Disallow: /*.json$
+
+# 网站地图位置
+Sitemap: https://shanpeibao.com/sitemap.xml

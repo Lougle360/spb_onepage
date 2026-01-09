@@ -1,0 +1,3193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>闪配宝 - A股股票配资平台 | 实盘交易，交割单可查</title>
+    <meta name="description" content="闪配宝是专业的A股股票配资平台，提供5-10倍杠杆，按日计息节假日免息，零起投门槛，注册送240元体验金，实盘交易交割单可查。">
+    <meta name="keywords" content="闪配宝,股票配资,A股配资,杠杆交易,实盘配资">
+    <meta name="author" content="闪配宝">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://shanpeibao.com/">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    <link rel="icon" href="images/spb-logo.png" type="image/png">
+    
+    <!-- Open Graph 元标签 -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="闪配宝 - A股股票配资平台 | 实盘交易，交割单可查">
+    <meta property="og:description" content="闪配宝是专业的A股股票配资平台，提供5-10倍杠杆，按日计息节假日免息，零起投门槛，注册送240元体验金，实盘交易交割单可查。">
+    <meta property="og:image" content="https://shanpeibao.com/images/spb-logo.png">
+    <meta property="og:url" content="https://shanpeibao.com/">
+    <meta property="og:site_name" content="闪配宝">
+    <meta property="og:locale" content="zh_CN">
+    
+    <!-- Twitter Card 元标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="闪配宝 - A股股票配资平台">
+    <meta name="twitter:description" content="专业A股配资，5-10倍杠杆，节假日免息，注册送240元体验金">
+    <meta name="twitter:image" content="https://shanpeibao.com/images/spb-logo.png">
+    
+    <!-- 本地化的 Tailwind CSS -->
+    <script src="css/tailwind.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'flash-orange': '#F97316',
+                        'energy-yellow': '#FACC15',
+                        'dark-blue': '#0F172A',
+                        'slate-dark': '#1E293B',
+                        'slate-mid': '#334155',
+                    },
+                    fontFamily: {
+                        'sans': ['Noto Sans SC', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- 本地化的自定义样式（包含字体定义） -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Organization 结构化数据 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "闪配宝",
+        "alternateName": "闪配宝APP",
+        "description": "闪配宝是专业的A股股票配资平台，提供5-10倍杠杆，按日计息节假日免息，零起投门槛，注册送240元体验金，实盘交易交割单可查。",
+        "url": "https://shanpeibao.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://shanpeibao.com/images/spb-logo.png",
+            "width": 512,
+            "height": 512
+        },
+        "slogan": "闪电到账，配你所需",
+        "foundingDate": "2020",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "上海",
+            "addressCountry": "CN"
+        },
+        "sameAs": [],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "availableLanguage": "Chinese"
+        }
+    }
+    </script>
+    
+    <!-- FAQPage 结构化数据 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "闪配宝是实盘交易吗？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "是的，闪配宝所有交易均为真实A股交易，交割单可通过券商系统查询验证，数据可与同花顺比对。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "可以交易哪些股票？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "支持沪深主板、创业板、中小板股票。ST、*ST及北交所股票暂不支持。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "支持集合竞价吗？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "支持，闪配宝APP支持在9:25-9:30期间使用预约买入/卖出功能下单。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "预约买卖和券商挂单有什么区别？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "预约买卖是平台盯盘功能，价格触发后再报送券商成交；券商挂单是直接进入交易所排队。未报状态时在L2查不到是正常的。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "下单后可以撤单吗？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "预约买卖在"未报"和"已报"状态时可撤单；市价委托不支持手动撤单。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "利息怎么收取？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "按配资金额的万分之19每日收取，仅交易日计息，周末和节假日免息。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "提现需要手续费吗？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "闪配宝提现完全免费，无任何手续费。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "穿仓了需要赔钱吗？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "穿仓亏损由平台承担，您仅需支付强平产生的手续费和印花税。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "体验金怎么使用？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "注册实名后自动获得240元，无需充值即可交易。盈利可抵扣后续交易费用，限持仓一天，8天内有效。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "最低充值多少？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "最低充值200元人民币。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "提现多久到账？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "交易日16:00前申请当日处理，16:00后下一交易日9:00后处理。通常10分钟内到账。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "忘记提现密码怎么办？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "在闪配宝APP中前往【个人中心】-【安全中心】-【提现密码】重置。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "银行卡可以绑定几张？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "只能绑定1张银行卡。如需更换，请联系客服申请解绑。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "为什么应用市场搜不到？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "由于行业特殊性，闪配宝APP暂未上架各大应用市场。请通过百度搜索"闪配宝"访问官网下载。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "可以1倍、2倍买入吗？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "闪配宝APP支持5倍、8倍、10倍三档杠杆。如果您想降低杠杆，可以在买入后通过追加保证金来调整杠杆比例。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "如何降低杠杆倍数？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "在闪配宝APP买入后，您可以随时追加保证金。追加保证金会降低您的杠杆比例，从而降低被强平的风险。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "为什么最高只有10倍杠杆？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "我们做的是实盘交易，为降低风险，最高提供10倍杠杆。过高的杠杆会放大风险，不利于资金安全。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "部分股票为什么只支持5倍或8倍杠杆？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "部分高风险股票（如涨跌停股票、新股等）为控制风险，系统会限制杠杆倍数，以页面显示为准。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "充值到私人账户安全吗？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "闪配宝是个人对个人的撮合模式，资金进入私人账户是正常的业务形态。如您有需要，可与资方签署个人合作协议。平台承诺实盘交易，不靠吃用户本金盈利。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "为什么转账到私人账户？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "闪配宝是个人经营行为，没有注册公司，所以不会出现企业转账。这是配资行业的常见模式。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "充值后多久可以交易？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "充值通常在5分钟内到账，到账后即可立即使用进行交易。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "充值处理时间是什么时候？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "充值处理时间为交易日9:00-17:00。非交易日不处理充值业务。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "银行卡失效了怎么办？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "如绑定银行卡失效，需联系客服申请解绑，然后重新绑定新卡。只支持绑定1张银行卡。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "交割单可以作假吗？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "我们的交易是完全进入实盘的，交割单可以通过券商系统查询验证，数据可与同花顺比对，无法作假。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "什么时候可以申请交割单？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "如需交割单，请在盘中申请，一般收盘后会发给您。因为需要资方在券商账户查询，建议提前申请。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "交割单有盖章吗？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "交割单就是券商账户中的成交明细，没有盖章。这是正常的券商交割单格式。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "同花顺免费版能查到我的交易吗？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "同花顺免费版的数据是经过合并处理的，不是L2会员的交易数据会被合并展示。L2会员可查询所有数据（具体时间点、手数、价格）。建议使用同花顺L2会员版本进行验证。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "强平线是怎么计算的？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "强平线计算公式为：（保证金+浮动盈亏）/ 买入金额。盘中需≥3%，尾盘需≥6%（创业板为10%）。买入金额=持仓股数×买入均价。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "如何避免被强平？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "您可以在触发平仓前，通过手动补充保证金或补仓来调整平仓线。追加保证金会降低杠杆比例，提高安全边际。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "连续涨跌停有什么限制？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "连续3个交易日涨跌停，第4个交易日不可交易；连续4个交易日涨跌停，第5-6个交易日不可交易；连续5个交易日涨跌停，第6-8个交易日不可交易。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "为什么14:55后不能交易？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "系统会在14:55之后进行订单结算，对持仓进行递延判定，对不符合递延条件的系统会进行处理，因此不支持交易。请在该时间段关注持仓情况。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "平台总额限额是什么意思？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "单支票平台总额限额300万，是指当前APP的所有人对这个股票的持仓总额上限。这是平台级别的风控措施。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "股票分红怎么处理？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "系统会自动根据分红数据，计算应得分红资金，分红资金会加入到该笔持仓的保证金中。在股权登记日收盘时您还有持仓，系统会在当日23点自动将分红派发到该笔持仓的保证金里。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "送股转股怎么处理？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "不管是送股、转股、或是配股，系统会根据相应政策自动计算出股数，持仓股数会产生变化。扩股部分上市日方可交易，此前无法卖出。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "分红要扣税吗？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "是的，在闪配宝APP中分红会扣除20%的税。分红金额会自动加入持仓保证金中。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "除权除息怎么处理？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "除权除息、分红赠配的股票我们和券商的处理方式是一样的。分红以现金充值的方式追加到您的保证金中。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "为什么不能买ST股票？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "ST股票是被股民抛弃的股票，有退市风险。ST是亏损了两年，*ST是连续三年亏损被警告，有退市的风险。为保护用户资金安全，平台禁止交易ST、*ST等高风险股票。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "科创板可以交易吗？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "暂不支持科创板股票交易。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "可转债、ETF可以交易吗？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "暂不支持可转债、ETF交易。平台仅支持A股股票交易。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "为什么午间11:30-13:00可以下单但无法撤单？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "午间时段市价买卖下单，于下午开盘后进行成交结算，下单后无法手动撤单。这是系统结算机制决定的。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "集合竞价可以撤单吗？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "9:15-9:20可以撤单，9:20-9:25不能撤单。9:25以成交量最大的价格为开盘价。"
+                }
+            }
+        ]
+    }
+    </script>
+    
+    <!-- SoftwareApplication 结构化数据 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "闪配宝APP",
+        "alternateName": "闪配宝",
+        "description": "闪配宝是专业的A股股票配资平台APP，提供5-10倍杠杆，按日计息节假日免息，零起投门槛，注册送240元体验金，实盘交易交割单可查。",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Android, iOS",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "CNY"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "1800",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "featureList": [
+            "5-10倍杠杆自由选择",
+            "按日计息节假日免息",
+            "注册送240元体验金",
+            "实盘交易交割单可查",
+            "预约买卖功能",
+            "止盈止损设置",
+            "穿仓平台承担"
+        ],
+        "screenshot": "https://shanpeibao.com/images/index_ui.jpg",
+        "softwareVersion": "2.0",
+        "author": {
+            "@type": "Organization",
+            "name": "闪配宝"
+        }
+    }
+    </script>
+    
+    <!-- BreadcrumbList 结构化数据 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "首页",
+                "item": "https://shanpeibao.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "产品功能",
+                "item": "https://shanpeibao.com/#features"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "费用说明",
+                "item": "https://shanpeibao.com/#fees"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "下载APP",
+                "item": "https://shanpeibao.com/#download"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "常见问答",
+                "item": "https://shanpeibao.com/#faq"
+            }
+        ]
+    }
+    </script>
+</head>
+<body class="bg-dark-blue text-white font-sans">
+    <!-- 01. 顶部导航 -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                <div class="flex items-center space-x-3">
+                    <img src="images/spb-logo.png" alt="闪配宝APP官方Logo - A股股票配资平台" class="h-10 w-10 md:h-12 md:w-12" width="48" height="48">
+                    <span class="text-xl md:text-2xl font-bold bg-gradient-to-r from-flash-orange to-energy-yellow bg-clip-text text-transparent">闪配宝</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#hero" class="nav-link">首页</a>
+                    <a href="#features" class="nav-link">产品功能</a>
+                    <a href="#fees" class="nav-link">费用说明</a>
+                    <a href="#download" class="nav-link">下载APP</a>
+                    <a href="#guide" class="nav-link">使用指南</a>
+                    <a href="#faq" class="nav-link">常见问答</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#download" class="hidden sm:inline-flex btn-primary">立即下载</a>
+                    <button id="mobile-menu-btn" class="md:hidden p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- 移动端菜单 -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-dark/95 backdrop-blur-lg">
+            <div class="px-4 py-4 space-y-3">
+                <a href="#hero" class="block py-2 nav-link">首页</a>
+                <a href="#features" class="block py-2 nav-link">产品功能</a>
+                <a href="#fees" class="block py-2 nav-link">费用说明</a>
+                <a href="#download" class="block py-2 nav-link">下载APP</a>
+                <a href="#guide" class="block py-2 nav-link">使用指南</a>
+                <a href="#faq" class="block py-2 nav-link">常见问答</a>
+                <a href="#download" class="block btn-primary text-center mt-4">立即下载</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+    <!-- 02. Hero 英雄区 -->
+    <section id="hero" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <div class="hero-bg absolute inset-0"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left animate-fade-in">
+                    <div class="inline-flex items-center space-x-2 bg-slate-dark/50 rounded-full px-4 py-2 mb-6">
+                        <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                        <span class="text-sm text-gray-300">实盘交易 · 交割单可查</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black mb-4">
+                        <span class="bg-gradient-to-r from-flash-orange to-energy-yellow bg-clip-text text-transparent">闪配宝</span>
+                        <span class="block text-2xl sm:text-3xl lg:text-4xl font-bold text-white mt-2">A股股票配资平台</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-gray-300 mb-6">零起投门槛，最高10倍杠杆，实盘交易可查交割单</p>
+                    <p class="text-flash-orange font-semibold text-lg mb-8">⚡ 闪电到账，配你所需</p>
+                    
+                    <!-- 核心卖点标签 -->
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-3 mb-6">
+                        <span class="tag-highlight">🎁 注册送240元体验金</span>
+                        <span class="tag-highlight">📈 5/8/10倍杠杆自由选</span>
+                        <span class="tag-highlight">🆓 节假日免息</span>
+                    </div>
+                    
+                    <!-- 信任标签 -->
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-4 mb-8">
+                        <span class="tag-trust">✓ 实盘交易</span>
+                        <span class="tag-trust">✓ 交割单可查</span>
+                        <span class="tag-trust">✓ 上海运营</span>
+                    </div>
+                    
+                    <!-- 下载按钮 -->
+                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+                        <a href="https://bmdyk.cn/" target="_blank" rel="noopener noreferrer" class="btn-primary text-lg px-8 py-4">
+                            <svg class="w-6 h-6 inline mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M17.523 2H6.477C5.768 2 5.5 2.768 5.5 3.477v17.046c0 .709.268 1.477.977 1.477h11.046c.709 0 .977-.768.977-1.477V3.477C18.5 2.768 18.232 2 17.523 2zM12 20.5a1 1 0 110-2 1 1 0 010 2zM16 17H8V5h8v12z"/></svg>
+                            安卓下载
+                        </a>
+                        <a href="https://bmdyk.cn/" target="_blank" rel="noopener noreferrer" class="btn-secondary text-lg px-8 py-4">
+                            <svg class="w-6 h-6 inline mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                            iOS下载
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 手机样机 -->
+                <div class="hidden lg:flex justify-center animate-float">
+                    <div class="relative">
+                        <div class="phone-mockup">
+                            <div class="phone-screen">
+                                <img src="images/index_ui.jpg" alt="闪配宝APP首页交易界面截图，展示股票配资功能、杠杆选择和实盘交易界面" class="w-full h-full object-cover object-top" width="320" height="640" loading="lazy" decoding="async">
+                            </div>
+                        </div>
+                        <div class="absolute -top-4 -right-4 bg-flash-orange text-white text-sm font-bold px-3 py-1 rounded-full animate-bounce">
+                            HOT
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 滚动提示 -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- 03. 数据展示 -->
+    <section class="py-16 bg-slate-dark/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-3xl sm:text-4xl font-black text-flash-orange mb-2" data-count="1800">1800<span class="text-2xl">人</span></div>
+                    <div class="text-gray-400">累计服务用户</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl sm:text-4xl font-black text-energy-yellow mb-2" data-count="100">100<span class="text-2xl">亿+</span></div>
+                    <div class="text-gray-400">累计交易额</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl sm:text-4xl font-black text-flash-orange mb-2" data-count="5">5<span class="text-2xl">年+</span></div>
+                    <div class="text-gray-400">平台运营时间</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl sm:text-4xl font-black text-energy-yellow mb-2" data-count="5000">5000<span class="text-2xl">万+</span></div>
+                    <div class="text-gray-400">当日可配资金</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 04. 什么是闪配宝 -->
+    <section id="about" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-title">什么是闪配宝？</h2>
+                <p class="section-desc max-w-4xl mx-auto">
+                    闪配宝是一款专业的A股股票配资工具，为投资者提供按日配资服务。通过闪配宝，您可以使用5-10倍杠杆放大投资规模，参与沪深主板及创业板股票的实盘交易。平台采用按交易日计息模式，节假日期间完全免息，让您的资金成本更低。
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3 class="text-xl font-bold mb-3">零起投门槛</h3>
+                    <p class="text-gray-400">新用户注册即可获得240元体验金，无需充值即可开始交易</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="text-xl font-bold mb-3">高杠杆配资</h3>
+                    <p class="text-gray-400">支持5倍、8倍、10倍三档杠杆，灵活选择</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✅</div>
+                    <h3 class="text-xl font-bold mb-3">实盘交易</h3>
+                    <p class="text-gray-400">所有交易均为真实A股交易，交割单可通过券商系统查询验证</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📅</div>
+                    <h3 class="text-xl font-bold mb-3">按日计息</h3>
+                    <p class="text-gray-400">仅交易日收取利息，节假日完全免息</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛠️</div>
+                    <h3 class="text-xl font-bold mb-3">功能丰富</h3>
+                    <p class="text-gray-400">预约买卖、止盈止损、分笔交易、集合竞价等功能齐全</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3 class="text-xl font-bold mb-3">穿仓保护</h3>
+                    <p class="text-gray-400">穿仓亏损由平台承担，保护用户本金安全</p>
+                </div>
+            </div>
+            
+            <!-- 产品信息表格 -->
+            <div class="bg-slate-dark rounded-2xl p-8 max-w-2xl mx-auto">
+                <h3 class="text-xl font-bold text-center mb-6 text-flash-orange">产品信息</h3>
+                <table class="w-full">
+                    <tbody>
+                        <tr class="border-b border-slate-mid">
+                            <td class="py-4 text-gray-400">产品类型</td>
+                            <td class="py-4 text-right font-medium">A股股票配资工具</td>
+                        </tr>
+                        <tr class="border-b border-slate-mid">
+                            <td class="py-4 text-gray-400">交易性质</td>
+                            <td class="py-4 text-right font-medium">实盘交易（交割单可查）</td>
+                        </tr>
+                        <tr class="border-b border-slate-mid">
+                            <td class="py-4 text-gray-400">杠杆倍数</td>
+                            <td class="py-4 text-right font-medium">5倍 / 8倍 / 10倍</td>
+                        </tr>
+                        <tr class="border-b border-slate-mid">
+                            <td class="py-4 text-gray-400">计息规则</td>
+                            <td class="py-4 text-right font-medium">仅交易日计息，节假日免息</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 text-gray-400">运营地点</td>
+                            <td class="py-4 text-right font-medium">中国上海</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- 05. 核心优势 -->
+    <section class="py-20 bg-gradient-to-b from-slate-dark/50 to-transparent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title text-center mb-16">闪配宝APP六大核心优势</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="advantage-card">
+                    <div class="advantage-number">01</div>
+                    <h3 class="text-xl font-bold mb-3">零起投门槛</h3>
+                    <p class="text-gray-400">新用户注册实名后，即可领取240元体验金，无需充值即可开始实盘交易体验。</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-number">02</div>
+                    <h3 class="text-xl font-bold mb-3">实盘交易保障</h3>
+                    <p class="text-gray-400">所有交易均为真实A股交易，交割单可通过券商系统查询验证，交易数据可与同花顺比对，杜绝虚拟盘。</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-number">03</div>
+                    <h3 class="text-xl font-bold mb-3">穿仓平台承担</h3>
+                    <p class="text-gray-400">若交易亏损超过保证金（穿仓），超出部分由平台承担，保护您的本金安全。</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-number">04</div>
+                    <h3 class="text-xl font-bold mb-3">节假日免息</h3>
+                    <p class="text-gray-400">利息仅在交易日收取，周末及法定节假日期间持仓完全免息，用几天算几天。</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-number">05</div>
+                    <h3 class="text-xl font-bold mb-3">灵活杠杆选择</h3>
+                    <p class="text-gray-400">提供5倍、8倍、10倍三档杠杆，根据风险偏好自由选择，买入后还可追加保证金降低杠杆。</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-number">06</div>
+                    <h3 class="text-xl font-bold mb-3">资金快速到账</h3>
+                    <p class="text-gray-400">充值提现均快速处理，提现完全免手续费。交易日16:00前申请提现，当日处理。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 06. 平台对比 -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title text-center mb-6">为什么选择闪配宝？</h2>
+            <p class="section-desc text-center mb-16">闪配宝与传统配资平台和券商融资融券对比</p>
+            
+            <!-- 四大优势说明 -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                <div class="bg-slate-dark rounded-2xl p-6 border-l-4 border-flash-orange">
+                    <h3 class="text-lg font-bold mb-3 text-flash-orange">灵活配</h3>
+                    <p class="text-sm text-gray-400 mb-4">提供5倍、8倍、10倍三档杠杆自由选择，根据风险偏好灵活配置。尤其是10倍高杠杆，资金放大效果显著。</p>
+                    <div class="bg-dark-blue/50 rounded-lg p-3 text-sm">
+                        <p class="text-gray-500 mb-1">券商融资融券：<span class="text-red-400">仅1-2倍</span></p>
+                        <p class="text-gray-500">闪配宝：<span class="text-green-400">最高10倍杠杆</span></p>
+                    </div>
+                </div>
+                <div class="bg-slate-dark rounded-2xl p-6 border-l-4 border-energy-yellow">
+                    <h3 class="text-lg font-bold mb-3 text-energy-yellow">门槛优势</h3>
+                    <p class="text-sm text-gray-400 mb-4">传统配资平台通常要求最低充值1万元以上，而闪配宝提供240元体验金，零起投门槛。</p>
+                    <div class="bg-dark-blue/50 rounded-lg p-3 text-sm">
+                        <p class="text-gray-500 mb-1">传统平台：<span class="text-red-400">1万元起</span></p>
+                        <p class="text-gray-500">闪配宝：<span class="text-green-400">0元（体验金）</span></p>
+                    </div>
+                </div>
+                <div class="bg-slate-dark rounded-2xl p-6 border-l-4 border-green-400">
+                    <h3 class="text-lg font-bold mb-3 text-green-400">功能优势</h3>
+                    <p class="text-sm text-gray-400 mb-4">闪配宝提供预约买卖、止盈止损、分笔交易、集合竞价等丰富功能，传统平台功能相对单一。</p>
+                    <div class="bg-dark-blue/50 rounded-lg p-3 text-sm">
+                        <p class="text-gray-500 mb-1">传统平台：<span class="text-red-400">基础功能</span></p>
+                        <p class="text-gray-500">闪配宝：<span class="text-green-400">丰富功能</span></p>
+                    </div>
+                </div>
+                <div class="bg-slate-dark rounded-2xl p-6 border-l-4 border-blue-400">
+                    <h3 class="text-lg font-bold mb-3 text-blue-400">透明度优势</h3>
+                    <p class="text-sm text-gray-400 mb-4">闪配宝费用透明，每一笔扣费都清晰可查，无隐藏费用。传统平台可能存在复杂收费模式。</p>
+                    <div class="bg-dark-blue/50 rounded-lg p-3 text-sm">
+                        <p class="text-gray-500 mb-1">传统平台：<span class="text-red-400">可能有隐藏费</span></p>
+                        <p class="text-gray-500">闪配宝：<span class="text-green-400">完全透明</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 对比表格 -->
+            <p class="text-center text-gray-500 text-sm mb-2 md:hidden">← 左右滑动查看完整表格 →</p>
+            <div class="overflow-x-auto mb-16 -mx-4 px-4 md:mx-0 md:px-0">
+                <table class="w-full min-w-[700px] compare-table">
+                    <thead>
+                        <tr>
+                            <th class="text-left">对比项</th>
+                            <th class="text-center bg-gradient-to-r from-flash-orange/20 to-energy-yellow/20">
+                                <span class="text-flash-orange font-bold">闪配宝</span>
+                            </th>
+                            <th class="text-center">传统配资平台</th>
+                            <th class="text-center">券商融资融券</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>起投门槛</td>
+                            <td class="highlight-cell">0元（体验金）</td>
+                            <td>通常1万+</td>
+                            <td>50万资产</td>
+                        </tr>
+                        <tr>
+                            <td>杠杆倍数</td>
+                            <td class="highlight-cell">5-10倍</td>
+                            <td>3-10倍</td>
+                            <td>1-2倍</td>
+                        </tr>
+                        <tr>
+                            <td>计息方式</td>
+                            <td class="highlight-cell">按日，节假日免</td>
+                            <td>月配/年配</td>
+                            <td>按日</td>
+                        </tr>
+                        <tr>
+                            <td>年化利率</td>
+                            <td class="highlight-cell">约4.8%</td>
+                            <td>约24%-30%</td>
+                            <td>约6%-8%</td>
+                        </tr>
+                        <tr>
+                            <td>交易功能</td>
+                            <td class="highlight-cell">预约买卖、止盈止损、分笔交易</td>
+                            <td>基础功能</td>
+                            <td>基础功能</td>
+                        </tr>
+                        <tr>
+                            <td>标的范围</td>
+                            <td class="highlight-cell">沪深主板、创业板</td>
+                            <td>有限</td>
+                            <td>融资融券标的</td>
+                        </tr>
+                        <tr>
+                            <td>实盘验证</td>
+                            <td class="highlight-cell">交割单可查</td>
+                            <td>部分可查</td>
+                            <td>可查</td>
+                        </tr>
+                        <tr>
+                            <td>穿仓保护</td>
+                            <td class="highlight-cell">平台承担</td>
+                            <td>用户承担</td>
+                            <td>用户承担</td>
+                        </tr>
+                        <tr>
+                            <td>提现速度</td>
+                            <td class="highlight-cell">10分钟内</td>
+                            <td>通常T+1</td>
+                            <td>T+1</td>
+                        </tr>
+                        <tr>
+                            <td>提现费用</td>
+                            <td class="highlight-cell">免费</td>
+                            <td>可能有费用</td>
+                            <td>免费</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- 7大理由 -->
+            <div class="bg-gradient-to-r from-flash-orange/10 to-energy-yellow/10 rounded-3xl p-8 md:p-12">
+                <h3 class="text-2xl font-bold text-center mb-10">选择闪配宝的 <span class="text-flash-orange">7大理由</span></h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <div class="bg-slate-dark/80 rounded-xl p-6 hover:transform hover:scale-105 transition-transform">
+                        <div class="text-3xl font-black text-flash-orange mb-3">01</div>
+                        <h4 class="font-bold mb-2">零起投门槛</h4>
+                        <p class="text-sm text-gray-400">新用户注册即可获得240元体验金，无需充值即可开始实盘交易，这是其他平台无法提供的。</p>
+                    </div>
+                    <div class="bg-slate-dark/80 rounded-xl p-6 hover:transform hover:scale-105 transition-transform">
+                        <div class="text-3xl font-black text-flash-orange mb-3">02</div>
+                        <h4 class="font-bold mb-2">按日计息</h4>
+                        <p class="text-sm text-gray-400">用几天算几天，周末和法定节假日完全免息，资金成本更低，资金利用率更高。</p>
+                    </div>
+                    <div class="bg-slate-dark/80 rounded-xl p-6 hover:transform hover:scale-105 transition-transform">
+                        <div class="text-3xl font-black text-flash-orange mb-3">03</div>
+                        <h4 class="font-bold mb-2">功能齐全</h4>
+                        <p class="text-sm text-gray-400">提供预约买卖、止盈止损、分笔交易、集合竞价等功能，满足不同交易策略需求。</p>
+                    </div>
+                    <div class="bg-slate-dark/80 rounded-xl p-6 hover:transform hover:scale-105 transition-transform">
+                        <div class="text-3xl font-black text-flash-orange mb-3">04</div>
+                        <h4 class="font-bold mb-2">实盘交易</h4>
+                        <p class="text-sm text-gray-400">所有交易均为真实A股交易，交割单可通过券商系统查询验证，数据可与同花顺比对。</p>
+                    </div>
+                    <div class="bg-slate-dark/80 rounded-xl p-6 hover:transform hover:scale-105 transition-transform">
+                        <div class="text-3xl font-black text-flash-orange mb-3">05</div>
+                        <h4 class="font-bold mb-2">穿仓保护</h4>
+                        <p class="text-sm text-gray-400">若交易亏损超过保证金（穿仓），超出部分由平台承担，保护您的本金安全。</p>
+                    </div>
+                    <div class="bg-slate-dark/80 rounded-xl p-6 hover:transform hover:scale-105 transition-transform">
+                        <div class="text-3xl font-black text-flash-orange mb-3">06</div>
+                        <h4 class="font-bold mb-2">透明规则</h4>
+                        <p class="text-sm text-gray-400">费率精确到小数点，每一笔扣费都清晰可查，提现完全免费，无任何隐藏费用。</p>
+                    </div>
+                    <div class="bg-slate-dark/80 rounded-xl p-6 hover:transform hover:scale-105 transition-transform">
+                        <div class="text-3xl font-black text-flash-orange mb-3">07</div>
+                        <h4 class="font-bold mb-2">快速到账</h4>
+                        <p class="text-sm text-gray-400">充值提现均在10分钟内处理，操作简单便捷，无需复杂审核流程。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 07. 产品功能 -->
+    <section id="features" class="py-20 bg-slate-dark/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title text-center mb-16">闪配宝APP产品功能</h2>
+            
+            <!-- 交易功能 -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold text-center mb-10 text-flash-orange">交易功能</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="function-card">
+                        <div class="function-icon">📋</div>
+                        <h4 class="font-bold mb-2">预约买入/卖出</h4>
+                        <p class="text-sm text-gray-400">设置目标价格，系统自动盯盘，价格触发后自动报送券商成交。支持在交易日9:25-9:30下单。</p>
+                    </div>
+                    <div class="function-card">
+                        <div class="function-icon">⚡</div>
+                        <h4 class="font-bold mb-2">市价交易</h4>
+                        <p class="text-sm text-gray-400">按当前市场价格即时买入或卖出。</p>
+                    </div>
+                    <div class="function-card">
+                        <div class="function-icon">📊</div>
+                        <h4 class="font-bold mb-2">分笔交易</h4>
+                        <p class="text-sm text-gray-400">支持分批买入和分批卖出，灵活控制仓位。</p>
+                    </div>
+                    <div class="function-card">
+                        <div class="function-icon">➕</div>
+                        <h4 class="font-bold mb-2">加仓操作</h4>
+                        <p class="text-sm text-gray-400">对持仓股票追加买入，操作与普通买入相同。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 风控工具 -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold text-center mb-10 text-energy-yellow">风控工具</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-slate-dark rounded-2xl p-8">
+                        <h4 class="text-xl font-bold mb-4 flex items-center">
+                            <span class="text-2xl mr-3">🎯</span>止盈止损
+                        </h4>
+                        <p class="text-gray-400 mb-4">自定义止盈止损价位，当买一价达到设定价位时自动卖出。</p>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li>• 设置后长期有效（跨交易日）</li>
+                            <li>• 直至价格触发或用户手动删除</li>
+                            <li>• 触发后按市价成交，成交价可能略有差异</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-dark rounded-2xl p-8">
+                        <h4 class="text-xl font-bold mb-4 flex items-center">
+                            <span class="text-2xl mr-3">⚠️</span>平仓线预警
+                        </h4>
+                        <p class="text-gray-400 mb-4">账户净值接近平仓线时，系统自动推送预警通知。</p>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li>• 剩余保证金比例接近强平线（3%）时预警</li>
+                            <li>• 接近过夜线（6%）时预警</li>
+                            <li>• 创业板股票接近过夜线（10%）时预警</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-dark rounded-2xl p-8">
+                        <h4 class="text-xl font-bold mb-4 flex items-center">
+                            <span class="text-2xl mr-3">💰</span>追加保证金
+                        </h4>
+                        <p class="text-gray-400 mb-4">持仓期间可随时追加保证金，降低杠杆比例，降低风险。</p>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li>• 追加保证金会降低杠杆比例</li>
+                            <li>• 提高剩余保证金比例</li>
+                            <li>• 降低被强平的风险</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-dark rounded-2xl p-8">
+                        <h4 class="text-xl font-bold mb-4 flex items-center">
+                            <span class="text-2xl mr-3">🕐</span>交易时段
+                        </h4>
+                        <div class="text-sm text-gray-400 space-y-2">
+                            <p><span class="text-white">9:15-9:30</span> 集合竞价</p>
+                            <p><span class="text-white">9:30-11:30</span> 上午连续竞价</p>
+                            <p><span class="text-white">11:30-13:00</span> 午间（可下单不可撤单）</p>
+                            <p><span class="text-white">13:00-14:55</span> 下午连续竞价</p>
+                            <p><span class="text-white">14:55后</span> 系统结算，不支持交易</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 交易时段汇总表 -->
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold text-center mb-10 text-flash-orange">交易时段汇总表</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full min-w-[600px] compare-table">
+                        <thead>
+                            <tr>
+                                <th class="text-left">时段</th>
+                                <th class="text-center">支持操作</th>
+                                <th class="text-center">注意事项</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-medium text-white">9:15-9:20</td>
+                                <td class="text-center text-green-400">下单、撤单</td>
+                                <td class="text-center text-gray-400">集合竞价</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium text-white">9:20-9:25</td>
+                                <td class="text-center text-yellow-400">下单、不可撤单</td>
+                                <td class="text-center text-gray-400">集合竞价</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium text-white">9:25-9:30</td>
+                                <td class="text-center text-yellow-400">下单</td>
+                                <td class="text-center text-gray-400">集合竞价撮合，9:25以成交量最大价格为开盘价</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium text-white">9:30-11:30</td>
+                                <td class="text-center text-green-400">所有交易操作</td>
+                                <td class="text-center text-gray-400">上午连续竞价</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium text-white">11:30-13:00</td>
+                                <td class="text-center text-yellow-400">市价买卖（不可撤单）</td>
+                                <td class="text-center text-gray-400">午间结算，下午开盘后成交</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium text-white">13:00-14:55</td>
+                                <td class="text-center text-green-400">所有交易操作</td>
+                                <td class="text-center text-gray-400">下午连续竞价</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium text-white">14:55后</td>
+                                <td class="text-center text-red-400">不支持交易</td>
+                                <td class="text-center text-gray-400">系统结算，对持仓进行递延判定</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 08. 可交易标的 -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title text-center mb-16">闪配宝哪些股不能买？</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-green-500/10 border border-green-500/30 rounded-2xl p-8">
+                    <h3 class="text-xl font-bold text-green-400 mb-6 flex items-center">
+                        <span class="text-2xl mr-3">✅</span>支持交易
+                    </h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-start">
+                            <span class="text-green-400 mr-2">•</span>
+                            <span><strong>沪深主板股票</strong>：上海、深圳主板市场所有正常交易的股票</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-400 mr-2">•</span>
+                            <span><strong>创业板股票</strong>：创业板中的非高风险股票</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-400 mr-2">•</span>
+                            <span><strong>中小板股票</strong>：中小板市场股票</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-red-500/10 border border-red-500/30 rounded-2xl p-8">
+                    <h3 class="text-xl font-bold text-red-400 mb-6 flex items-center">
+                        <span class="text-2xl mr-3">❌</span>禁止交易
+                    </h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-start">
+                            <span class="text-red-400 mr-2">•</span>
+                            <span><strong>ST、*ST股票</strong>：被特别处理的股票，有退市风险</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-red-400 mr-2">•</span>
+                            <span><strong>北交所股票</strong>：暂不支持</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-red-400 mr-2">•</span>
+                            <span><strong>科创板股票</strong>：暂不支持</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-red-400 mr-2">•</span>
+                            <span><strong>可转债、ETF</strong>：暂不支持</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- 涨跌停股票规则 -->
+            <div class="mt-12 bg-slate-dark rounded-2xl p-8 max-w-4xl mx-auto">
+                <h3 class="text-xl font-bold text-center mb-6">涨跌停股票规则</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="border-b border-slate-mid">
+                                <th class="text-left py-4 text-gray-400">操作</th>
+                                <th class="text-left py-4 text-gray-400">规则</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-slate-mid/50">
+                                <td class="py-4 font-medium">涨停股买入</td>
+                                <td class="py-4 text-green-400">卖一有量时，可使用8倍杠杆市价买入</td>
+                            </tr>
+                            <tr class="border-b border-slate-mid/50">
+                                <td class="py-4 font-medium">涨停股卖出</td>
+                                <td class="py-4 text-green-400">正常卖出</td>
+                            </tr>
+                            <tr class="border-b border-slate-mid/50">
+                                <td class="py-4 font-medium">跌停股买入</td>
+                                <td class="py-4 text-red-400">不支持</td>
+                            </tr>
+                            <tr class="border-b border-slate-mid/50">
+                                <td class="py-4 font-medium">跌停股卖出</td>
+                                <td class="py-4 text-yellow-400">支持预约卖出</td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 font-medium">创业板涨跌幅达15%</td>
+                                <td class="py-4 text-red-400">暂不支持买入</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- 新股交易规则 -->
+            <div class="mt-8 bg-slate-dark rounded-2xl p-8 max-w-4xl mx-auto">
+                <h3 class="text-xl font-bold text-center mb-6">新股交易规则</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-bold text-flash-orange mb-4">创业板新股</h4>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li>• 1-5天：不支持买入</li>
+                            <li>• 6-20天：可买入，单股持仓限额≤2万</li>
+                            <li>• 21天起：恢复正常限额</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-energy-yellow mb-4">非创业板新股</h4>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li>• 1-2天：不支持买入</li>
+                            <li>• 3-20天：可买入，单股持仓限额≤2万</li>
+                            <li>• 21天起：恢复正常限额</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 09. 费用说明 -->
+    <section id="fees" class="py-20 bg-slate-dark/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title text-center mb-6">闪配宝APP费用说明</h2>
+            <p class="section-desc text-center mb-16">透明收费，精确到小数点</p>
+            
+            <!-- 费用一览表 -->
+            <div class="bg-slate-dark rounded-2xl p-8 max-w-3xl mx-auto mb-12">
+                <h3 class="text-xl font-bold text-center mb-6">费用一览</h3>
+                <table class="w-full">
+                    <thead>
+                        <tr class="border-b border-slate-mid">
+                            <th class="text-left py-4 text-gray-400">费用项目</th>
+                            <th class="text-center py-4 text-gray-400">收费标准</th>
+                            <th class="text-right py-4 text-gray-400">说明</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-slate-mid/50">
+                            <td class="py-4">过夜费（利息）</td>
+                            <td class="py-4 text-center text-flash-orange font-bold">配资金额 × 0.19%/天</td>
+                            <td class="py-4 text-right text-sm text-gray-400">仅交易日收取，节假日免息</td>
+                        </tr>
+                        <tr class="border-b border-slate-mid/50">
+                            <td class="py-4">买入手续费</td>
+                            <td class="py-4 text-center text-flash-orange font-bold">成交市值 × 0.1%</td>
+                            <td class="py-4 text-right text-sm text-gray-400">成交后收取</td>
+                        </tr>
+                        <tr class="border-b border-slate-mid/50">
+                            <td class="py-4">卖出手续费</td>
+                            <td class="py-4 text-center text-flash-orange font-bold">成交市值 × 0.1%</td>
+                            <td class="py-4 text-right text-sm text-gray-400">成交后收取</td>
+                        </tr>
+                        <tr class="border-b border-slate-mid/50">
+                            <td class="py-4">印花税</td>
+                            <td class="py-4 text-center text-flash-orange font-bold">成交金额 × 0.05%</td>
+                            <td class="py-4 text-right text-sm text-gray-400">卖出时收取（国家规定）</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4">提现手续费</td>
+                            <td class="py-4 text-center text-green-400 font-bold">免费</td>
+                            <td class="py-4 text-right text-sm text-gray-400">无任何提现费用</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- 费用计算器 -->
+            <div class="bg-gradient-to-r from-flash-orange/10 to-energy-yellow/10 border border-flash-orange/30 rounded-2xl p-8 max-w-3xl mx-auto">
+                <h3 class="text-xl font-bold text-center mb-6">💡 费用计算器</h3>
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-sm text-gray-400 mb-2">保证金金额（元）</label>
+                        <input type="number" id="calc-amount" value="1000" min="100" class="w-full bg-slate-dark border border-slate-mid rounded-lg px-4 py-3 text-white focus:border-flash-orange focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-sm text-gray-400 mb-2">杠杆倍数</label>
+                        <select id="calc-leverage" class="w-full bg-slate-dark border border-slate-mid rounded-lg px-4 py-3 text-white focus:border-flash-orange focus:outline-none">
+                            <option value="5">5倍</option>
+                            <option value="8">8倍</option>
+                            <option value="10" selected>10倍</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-sm text-gray-400 mb-2">持仓天数（交易日）</label>
+                        <input type="number" id="calc-days" value="1" min="1" class="w-full bg-slate-dark border border-slate-mid rounded-lg px-4 py-3 text-white focus:border-flash-orange focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-sm text-gray-400 mb-2">卖出市值（元）</label>
+                        <input type="number" id="calc-sell" value="11000" min="0" class="w-full bg-slate-dark border border-slate-mid rounded-lg px-4 py-3 text-white focus:border-flash-orange focus:outline-none">
+                    </div>
+                </div>
+                <button onclick="calculateFees()" class="w-full btn-primary py-3 mb-6">计算费用</button>
+                <div id="calc-result" class="bg-slate-dark rounded-lg p-6">
+                    <div class="grid grid-cols-2 gap-4 text-sm">
+                        <div>配资金额：<span id="result-total" class="text-flash-orange font-bold">10,000元</span></div>
+                        <div>买入手续费：<span id="result-buy-fee" class="text-white">10元</span></div>
+                        <div>过夜费（<span id="result-days">1</span>天）：<span id="result-interest" class="text-white">19元</span></div>
+                        <div>卖出手续费：<span id="result-sell-fee" class="text-white">11元</span></div>
+                        <div>印花税：<span id="result-tax" class="text-white">5.5元</span></div>
+                        <div class="col-span-2 pt-4 border-t border-slate-mid mt-2">
+                            <span class="text-lg">总费用：<span id="result-total-fee" class="text-energy-yellow font-bold text-xl">45.5元</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 费用计算示例 -->
+            <div class="mt-16 max-w-5xl mx-auto">
+                <h3 class="text-2xl font-bold text-center mb-10">费用计算示例</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- 示例一：单日交易 -->
+                    <div class="bg-slate-dark rounded-2xl p-6">
+                        <div class="text-flash-orange font-bold text-sm mb-2">示例一</div>
+                        <h4 class="text-lg font-bold mb-4">单日交易</h4>
+                        <p class="text-sm text-gray-400 mb-4">保证金1000元，10倍杠杆，配资10000元</p>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">买入手续费</span>
+                                <span>10元</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">过夜费(1天)</span>
+                                <span>19元</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">卖出手续费</span>
+                                <span>11元</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">印花税</span>
+                                <span>5.5元</span>
+                            </div>
+                            <div class="flex justify-between pt-3 border-t border-slate-mid font-bold">
+                                <span>总费用</span>
+                                <span class="text-flash-orange">45.5元</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 示例二：周末持仓 -->
+                    <div class="bg-slate-dark rounded-2xl p-6">
+                        <div class="text-energy-yellow font-bold text-sm mb-2">示例二</div>
+                        <h4 class="text-lg font-bold mb-4">周末持仓</h4>
+                        <p class="text-sm text-gray-400 mb-4">周五买入，周一卖出，市值10000元</p>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">买入手续费</span>
+                                <span>10元</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">过夜费(周五1天)</span>
+                                <span>19元</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">周末两天</span>
+                                <span class="text-green-400">0元(免息)</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">卖出+印花税</span>
+                                <span>16.5元</span>
+                            </div>
+                            <div class="flex justify-between pt-3 border-t border-slate-mid font-bold">
+                                <span>总费用</span>
+                                <span class="text-energy-yellow">45.5元</span>
+                            </div>
+                        </div>
+                        <p class="text-xs text-green-400 mt-3">与单日交易相同！节假日免息</p>
+                    </div>
+                    
+                    <!-- 示例三：长期持仓 -->
+                    <div class="bg-slate-dark rounded-2xl p-6">
+                        <div class="text-blue-400 font-bold text-sm mb-2">示例三</div>
+                        <h4 class="text-lg font-bold mb-4">长期持仓</h4>
+                        <p class="text-sm text-gray-400 mb-4">买入市值10000元，持仓5个交易日</p>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">买入手续费</span>
+                                <span>10元</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">过夜费(5天)</span>
+                                <span>95元</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">卖出手续费</span>
+                                <span>11元</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">印花税</span>
+                                <span>5.5元</span>
+                            </div>
+                            <div class="flex justify-between pt-3 border-t border-slate-mid font-bold">
+                                <span>总费用</span>
+                                <span class="text-blue-400">121.5元</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 扣费时机详解 -->
+            <div class="mt-16 max-w-4xl mx-auto">
+                <h3 class="text-2xl font-bold text-center mb-10">扣费时机详解</h3>
+                <div class="relative">
+                    <!-- 时间线 -->
+                    <div class="hidden md:block absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-flash-orange via-energy-yellow to-green-400"></div>
+                    
+                    <div class="space-y-6">
+                        <div class="relative flex items-start md:pl-20">
+                            <div class="hidden md:flex absolute left-0 w-16 h-16 bg-flash-orange/20 rounded-full items-center justify-center">
+                                <span class="text-flash-orange font-bold text-xl">1</span>
+                            </div>
+                            <div class="bg-slate-dark rounded-xl p-6 flex-1">
+                                <h4 class="font-bold mb-2 flex items-center">
+                                    <span class="md:hidden text-flash-orange mr-2">1.</span>发起委托时
+                                </h4>
+                                <p class="text-sm text-gray-400">冻结保证金 = 买入市值 ÷ 杠杆倍数</p>
+                                <p class="text-sm text-gray-500 mt-1">例如：买入10000元，10倍杠杆，冻结1000元保证金</p>
+                            </div>
+                        </div>
+                        
+                        <div class="relative flex items-start md:pl-20">
+                            <div class="hidden md:flex absolute left-0 w-16 h-16 bg-flash-orange/20 rounded-full items-center justify-center">
+                                <span class="text-flash-orange font-bold text-xl">2</span>
+                            </div>
+                            <div class="bg-slate-dark rounded-xl p-6 flex-1">
+                                <h4 class="font-bold mb-2 flex items-center">
+                                    <span class="md:hidden text-flash-orange mr-2">2.</span>买入成交后
+                                </h4>
+                                <p class="text-sm text-gray-400">扣除买入手续费 = 成交市值 × 0.1%</p>
+                                <p class="text-sm text-gray-500 mt-1">例如：成交10000元，扣除10元手续费</p>
+                            </div>
+                        </div>
+                        
+                        <div class="relative flex items-start md:pl-20">
+                            <div class="hidden md:flex absolute left-0 w-16 h-16 bg-energy-yellow/20 rounded-full items-center justify-center">
+                                <span class="text-energy-yellow font-bold text-xl">3</span>
+                            </div>
+                            <div class="bg-slate-dark rounded-xl p-6 flex-1">
+                                <h4 class="font-bold mb-2 flex items-center">
+                                    <span class="md:hidden text-energy-yellow mr-2">3.</span>卖出成交后
+                                </h4>
+                                <p class="text-sm text-gray-400">扣除卖出手续费 = 成交市值 × 0.1%</p>
+                                <p class="text-sm text-gray-400">扣除印花税 = 成交金额 × 0.05%</p>
+                                <p class="text-sm text-gray-500 mt-1">例如：成交11000元，扣除11元手续费 + 5.5元印花税</p>
+                            </div>
+                        </div>
+                        
+                        <div class="relative flex items-start md:pl-20">
+                            <div class="hidden md:flex absolute left-0 w-16 h-16 bg-energy-yellow/20 rounded-full items-center justify-center">
+                                <span class="text-energy-yellow font-bold text-xl">4</span>
+                            </div>
+                            <div class="bg-slate-dark rounded-xl p-6 flex-1">
+                                <h4 class="font-bold mb-2 flex items-center">
+                                    <span class="md:hidden text-energy-yellow mr-2">4.</span>每日结算时
+                                </h4>
+                                <p class="text-sm text-gray-400">扣除过夜费 = 持仓市值 × 0.19%（仅交易日）</p>
+                                <p class="text-sm text-gray-500 mt-1">结算时间：每日收盘后，非交易日不收取过夜费</p>
+                            </div>
+                        </div>
+                        
+                        <div class="relative flex items-start md:pl-20">
+                            <div class="hidden md:flex absolute left-0 w-16 h-16 bg-green-400/20 rounded-full items-center justify-center">
+                                <span class="text-green-400 font-bold text-xl">5</span>
+                            </div>
+                            <div class="bg-slate-dark rounded-xl p-6 flex-1">
+                                <h4 class="font-bold mb-2 flex items-center">
+                                    <span class="md:hidden text-green-400 mr-2">5.</span>保证金退还
+                                </h4>
+                                <p class="text-sm text-gray-400">保证金、手续费、印花税根据实际成交股数和金额计算</p>
+                                <p class="text-sm text-gray-500 mt-1">保证金超出部分将退回账户余额</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. 持仓规则与风控 -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title text-center mb-16">闪配宝APP持仓规则与风控</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
+                <!-- 持仓限额 -->
+                <div class="bg-slate-dark rounded-2xl p-8">
+                    <h3 class="text-xl font-bold mb-6 text-flash-orange">持仓限额</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center py-3 border-b border-slate-mid">
+                            <span class="text-gray-400">单票持仓上限</span>
+                            <span class="text-2xl font-bold">100万元</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3">
+                            <span class="text-gray-400">总持仓上限</span>
+                            <span class="text-2xl font-bold">300万元</span>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-4">* 按初始市值计算</p>
+                    </div>
+                </div>
+                
+                <!-- 风控线设置 -->
+                <div class="bg-slate-dark rounded-2xl p-8">
+                    <h3 class="text-xl font-bold mb-6 text-energy-yellow">风控线设置</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-gray-400">强平线（盘中）</span>
+                                <span class="text-red-400 font-bold text-xl">3%</span>
+                            </div>
+                            <div class="w-full bg-slate-mid rounded-full h-2">
+                                <div class="bg-red-500 h-2 rounded-full" style="width: 30%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-gray-400">过夜线（14:55结算）</span>
+                                <span class="text-yellow-400 font-bold text-xl">6%</span>
+                            </div>
+                            <div class="w-full bg-slate-mid rounded-full h-2">
+                                <div class="bg-yellow-500 h-2 rounded-full" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-gray-400">创业板过夜线</span>
+                                <span class="text-orange-400 font-bold text-xl">10%</span>
+                            </div>
+                            <div class="w-full bg-slate-mid rounded-full h-2">
+                                <div class="bg-orange-500 h-2 rounded-full" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 穿仓处理 -->
+            <div class="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-2xl p-8 max-w-3xl mx-auto mb-16">
+                <h3 class="text-xl font-bold mb-4 text-center text-green-400">🛡️ 穿仓保护机制</h3>
+                <p class="text-center text-gray-300 mb-4">若亏损超过保证金（穿仓），穿仓部分由平台承担。</p>
+                <p class="text-center text-sm text-gray-400">您仅需支付强平产生的手续费和印花税。若穿仓后无法卖出，过夜费由用户承担。</p>
+            </div>
+            
+            <!-- 强平线详细计算示例 -->
+            <div class="max-w-5xl mx-auto mb-16">
+                <h3 class="text-2xl font-bold text-center mb-10">强平线详细计算示例</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-slate-dark rounded-2xl p-8">
+                        <h4 class="text-lg font-bold mb-4 text-flash-orange">示例：8倍杠杆买入</h4>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex justify-between">
+                                <span>买入市值</span>
+                                <span class="font-bold">10,000元</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>保证金</span>
+                                <span class="font-bold">1,250元</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>初始保证金比例</span>
+                                <span class="font-bold text-green-400">12.5%</span>
+                            </li>
+                        </ul>
+                        <div class="mt-6 pt-4 border-t border-slate-mid">
+                            <p class="text-sm text-gray-400"><strong class="text-red-400">盘中强平线(3%)：</strong>当（保证金+浮动盈亏）/ 买入金额 ≤ 3%时，系统以市价卖出</p>
+                            <p class="text-sm text-gray-400 mt-2"><strong class="text-yellow-400">尾盘强平线(6%)：</strong>14:55-15:00时段，保证金比例需≥6%，创业板需≥10%</p>
+                        </div>
+                    </div>
+                    <div class="bg-slate-dark rounded-2xl p-8">
+                        <h4 class="text-lg font-bold mb-4 text-energy-yellow">如何避免被强平？</h4>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-flash-orange/20 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                    <span class="text-flash-orange font-bold">1</span>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold mb-1">追加保证金</h5>
+                                    <p class="text-sm text-gray-400">手动补充保证金，提高保证金比例</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-flash-orange/20 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                    <span class="text-flash-orange font-bold">2</span>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold mb-1">补仓操作</h5>
+                                    <p class="text-sm text-gray-400">通过加仓降低持仓成本，提高安全边际</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-flash-orange/20 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                    <span class="text-flash-orange font-bold">3</span>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold mb-1">及时止损</h5>
+                                    <p class="text-sm text-gray-400">设置止损价位，避免进一步亏损</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 连续涨跌停交易限制 -->
+            <div class="max-w-3xl mx-auto mb-16">
+                <h3 class="text-2xl font-bold text-center mb-10">连续涨跌停交易限制</h3>
+                <div class="bg-slate-dark rounded-2xl p-8">
+                    <p class="text-gray-400 text-center mb-6">为控制风险，平台对连续涨跌停股票有交易限制</p>
+                    <table class="w-full">
+                        <thead>
+                            <tr class="border-b border-slate-mid">
+                                <th class="text-left py-3 text-gray-400">连续涨跌停天数</th>
+                                <th class="text-right py-3 text-gray-400">限制规则</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-slate-mid/50">
+                                <td class="py-4 font-medium">连续3个交易日</td>
+                                <td class="py-4 text-right text-red-400">第4个交易日不可交易</td>
+                            </tr>
+                            <tr class="border-b border-slate-mid/50">
+                                <td class="py-4 font-medium">连续4个交易日</td>
+                                <td class="py-4 text-right text-red-400">第5-6个交易日不可交易</td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 font-medium">连续5个交易日</td>
+                                <td class="py-4 text-right text-red-400">第6-8个交易日不可交易</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- 盈亏结算公式 -->
+            <div class="max-w-4xl mx-auto mb-16">
+                <h3 class="text-2xl font-bold text-center mb-10">盈亏结算公式</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-green-500/10 border border-green-500/30 rounded-2xl p-6">
+                        <h4 class="font-bold text-green-400 mb-4 text-center">盈利情况</h4>
+                        <div class="text-sm text-gray-300 bg-slate-dark/50 rounded-lg p-4">
+                            <p class="font-mono text-xs">返还金额 = 冻结保证金 × (成交股数/持仓股数) + (卖出价-成本价) × 成交股数 - 手续费 - 印花税</p>
+                        </div>
+                    </div>
+                    <div class="bg-yellow-500/10 border border-yellow-500/30 rounded-2xl p-6">
+                        <h4 class="font-bold text-yellow-400 mb-4 text-center">亏损未穿仓</h4>
+                        <div class="text-sm text-gray-300 bg-slate-dark/50 rounded-lg p-4">
+                            <p class="font-mono text-xs">返还金额 = 冻结保证金 × (成交股数/持仓股数) + (卖出价-成本价) × 成交股数 - 手续费 - 印花税</p>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-3">冻结保证金 = 买入时冻结 + 持仓时追加</p>
+                    </div>
+                    <div class="bg-red-500/10 border border-red-500/30 rounded-2xl p-6">
+                        <h4 class="font-bold text-red-400 mb-4 text-center">穿仓情况</h4>
+                        <div class="text-sm text-gray-300 bg-slate-dark/50 rounded-lg p-4">
+                            <p class="font-mono text-xs">返还金额 = 0</p>
+                            <p class="mt-2 text-xs">穿仓部分由平台承担，只需支付手续费和印花税</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 持仓股票权益 -->
+            <div class="max-w-5xl mx-auto">
+                <h3 class="text-2xl font-bold text-center mb-10">持仓股票权益处理</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-slate-dark rounded-2xl p-6">
+                        <div class="text-3xl mb-4">💰</div>
+                        <h4 class="text-lg font-bold mb-3 text-flash-orange">分红处理</h4>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li>• 系统自动计算应得分红资金</li>
+                            <li>• 分红资金加入持仓保证金中</li>
+                            <li>• 分红会扣除20%的税</li>
+                            <li>• 股权登记日23点自动处理</li>
+                        </ul>
+                        <div class="mt-4 pt-4 border-t border-slate-mid text-xs text-gray-500">
+                            示例：每10股派1元，持1000股，扣税后到账80元
+                        </div>
+                    </div>
+                    <div class="bg-slate-dark rounded-2xl p-6">
+                        <div class="text-3xl mb-4">📈</div>
+                        <h4 class="text-lg font-bold mb-3 text-energy-yellow">扩股处理</h4>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li>• 送股：持仓股数自动增加</li>
+                            <li>• 转股：持仓股数自动增加</li>
+                            <li>• 配股：持仓股数自动增加</li>
+                            <li>• 扩股部分上市日方可交易</li>
+                        </ul>
+                        <div class="mt-4 pt-4 border-t border-slate-mid text-xs text-gray-500">
+                            示例：持1000股，每10股送2股，变为1200股
+                        </div>
+                    </div>
+                    <div class="bg-slate-dark rounded-2xl p-6">
+                        <div class="text-3xl mb-4">📊</div>
+                        <h4 class="text-lg font-bold mb-3 text-green-400">除权除息</h4>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li>• 处理方式与券商一致</li>
+                            <li>• 分红以现金追加到保证金</li>
+                            <li>• 股权登记日23点自动处理</li>
+                            <li>• 系统自动调整持仓成本</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. 体验金活动 -->
+    <section id="experience" class="py-20 bg-gradient-to-r from-flash-orange/20 to-energy-yellow/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-block bg-flash-orange text-white text-sm font-bold px-4 py-1 rounded-full mb-6">新用户专享</div>
+                <h2 class="text-4xl sm:text-5xl font-black mb-6">
+                    闪配宝<span class="text-energy-yellow">240元</span>体验金
+                </h2>
+                <p class="text-xl text-gray-300 mb-8">注册并完成实名认证，即可领取240元体验金。使用10倍杠杆，相当于2400元配资额度，可直接进行实盘交易。无需任何充值，即可体验完整的配资交易流程。</p>
+                
+                <div class="grid sm:grid-cols-3 gap-6 mb-10">
+                    <div class="bg-slate-dark/80 rounded-xl p-6">
+                        <div class="text-3xl mb-3">🎁</div>
+                        <h4 class="font-bold mb-2">无需充值</h4>
+                        <p class="text-sm text-gray-400">注册实名后直接使用</p>
+                    </div>
+                    <div class="bg-slate-dark/80 rounded-xl p-6">
+                        <div class="text-3xl mb-3">💰</div>
+                        <h4 class="font-bold mb-2">盈利可抵扣</h4>
+                        <p class="text-sm text-gray-400">盈利部分可抵扣后续费用</p>
+                    </div>
+                    <div class="bg-slate-dark/80 rounded-xl p-6">
+                        <div class="text-3xl mb-3">⏰</div>
+                        <h4 class="font-bold mb-2">8天有效</h4>
+                        <p class="text-sm text-gray-400">领取后8天内有效</p>
+                    </div>
+                </div>
+                
+                <div class="bg-slate-dark/80 rounded-xl p-6 mb-10">
+                    <h4 class="font-bold mb-4">体验金规则</h4>
+                    <div class="grid sm:grid-cols-2 gap-4 text-sm text-left">
+                        <div class="flex items-start">
+                            <span class="text-flash-orange mr-2">•</span>
+                            <span class="text-gray-400">限持仓一个交易日（T+1强制卖出）</span>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-flash-orange mr-2">•</span>
+                            <span class="text-gray-400">仅支持8倍或10倍杠杆</span>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-flash-orange mr-2">•</span>
+                            <span class="text-gray-400">只能用于一次交易</span>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-flash-orange mr-2">•</span>
+                            <span class="text-gray-400">体验金本金不可提现</span>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-flash-orange mr-2">•</span>
+                            <span class="text-gray-400">购买力：240元×10倍=2400元</span>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-flash-orange mr-2">•</span>
+                            <span class="text-gray-400">可购买24元以下股票，最少100股</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="#download" class="btn-primary text-xl px-12 py-4 inline-block">立即领取体验金</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. 使用流程 -->
+    <section id="guide" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title text-center mb-6">如何开始使用闪配宝？</h2>
+            <p class="section-desc text-center mb-16">5步快速上手闪配宝APP</p>
+            
+            <div class="relative max-w-4xl mx-auto">
+                <!-- 连接线 -->
+                <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-flash-orange to-energy-yellow transform -translate-x-1/2"></div>
+                
+                <div class="space-y-12">
+                    <!-- 步骤1 -->
+                    <div class="relative flex items-center md:justify-start">
+                        <div class="flex-shrink-0 w-full md:w-1/2 md:pr-12 md:text-right">
+                            <div class="step-card">
+                                <div class="step-number">1</div>
+                                <h3 class="text-xl font-bold mb-2">下载APP</h3>
+                                <p class="text-gray-400">通过百度搜索"闪配宝"访问官网，下载安装包。安卓用户下载APK，苹果用户需信任企业级开发者证书。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 步骤2 -->
+                    <div class="relative flex items-center md:justify-end">
+                        <div class="flex-shrink-0 w-full md:w-1/2 md:pl-12">
+                            <div class="step-card">
+                                <div class="step-number">2</div>
+                                <h3 class="text-xl font-bold mb-2">注册账号</h3>
+                                <p class="text-gray-400">使用手机号注册，设置登录密码。验证码是APP自动弹窗提示的，不需要手机短信接收。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 步骤3 -->
+                    <div class="relative flex items-center md:justify-start">
+                        <div class="flex-shrink-0 w-full md:w-1/2 md:pr-12 md:text-right">
+                            <div class="step-card">
+                                <div class="step-number">3</div>
+                                <h3 class="text-xl font-bold mb-2">实名认证</h3>
+                                <p class="text-gray-400">填写姓名、身份证号完成认证。必须使用真实身份信息，认证通过后才能使用体验金。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 步骤4 -->
+                    <div class="relative flex items-center md:justify-end">
+                        <div class="flex-shrink-0 w-full md:w-1/2 md:pl-12">
+                            <div class="step-card">
+                                <div class="step-number">4</div>
+                                <h3 class="text-xl font-bold mb-2">领取体验金</h3>
+                                <p class="text-gray-400">实名通过后自动获得240元体验金。进入【我的】-【优惠券】查看。使用10倍杠杆=2400元购买力。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 步骤5 -->
+                    <div class="relative flex items-center md:justify-start">
+                        <div class="flex-shrink-0 w-full md:w-1/2 md:pr-12 md:text-right">
+                            <div class="step-card">
+                                <div class="step-number">5</div>
+                                <h3 class="text-xl font-bold mb-2">开始交易</h3>
+                                <p class="text-gray-400">选择股票、杠杆倍数，发起配资交易。搜索股票代码或名称，选择使用体验金，确认买入即可。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#download" class="btn-primary text-lg px-10 py-4">立即下载开始</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12.5. 交易案例与场景 -->
+    <section id="cases" class="py-20 bg-slate-dark/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title text-center mb-6">闪配宝APP交易案例与场景</h2>
+            <p class="section-desc text-center mb-12">通过真实案例了解如何使用闪配宝APP进行股票配资交易</p>
+            
+            <!-- 场景Tab -->
+            <div class="flex flex-wrap justify-center gap-2 mb-8">
+                <button class="case-tab active" onclick="showCase(1)">场景一：体验金交易</button>
+                <button class="case-tab" onclick="showCase(2)">场景二：加仓降成本</button>
+                <button class="case-tab" onclick="showCase(3)">场景三：止盈止损</button>
+                <button class="case-tab" onclick="showCase(4)">场景四：周末持仓</button>
+                <button class="case-tab" onclick="showCase(5)">场景五：穿仓处理</button>
+                <button class="case-tab" onclick="showCase(6)">场景六：避免强平</button>
+            </div>
+            
+            <!-- 场景内容 -->
+            <div class="max-w-4xl mx-auto">
+                <!-- 场景一 -->
+                <div id="case-1" class="case-content">
+                    <div class="bg-slate-dark rounded-2xl p-8">
+                        <div class="flex items-center mb-6">
+                            <span class="bg-flash-orange text-white text-sm font-bold px-3 py-1 rounded-full mr-4">场景一</span>
+                            <h3 class="text-xl font-bold">新用户使用体验金首次交易</h3>
+                        </div>
+                        <p class="text-gray-400 mb-6"><strong>背景：</strong>张先生刚注册闪配宝，想用体验金尝试交易。</p>
+                        
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-bold text-flash-orange mb-4">操作步骤</h4>
+                                <ol class="space-y-2 text-sm text-gray-300">
+                                    <li>1. 注册并完成实名认证，获得240元体验金</li>
+                                    <li>2. 选择一只20元的股票</li>
+                                    <li>3. 使用10倍杠杆，购买2400元市值（120股）</li>
+                                    <li>4. 当日买入，持仓一天</li>
+                                    <li>5. 次日卖出，假设盈利100元</li>
+                                </ol>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-energy-yellow mb-4">费用计算</h4>
+                                <div class="space-y-2 text-sm">
+                                    <div class="flex justify-between text-gray-400">
+                                        <span>买入手续费</span><span>2.4元</span>
+                                    </div>
+                                    <div class="flex justify-between text-gray-400">
+                                        <span>卖出手续费</span><span>2.5元</span>
+                                    </div>
+                                    <div class="flex justify-between text-gray-400">
+                                        <span>印花税</span><span>1.25元</span>
+                                    </div>
+                                    <div class="flex justify-between text-gray-400">
+                                        <span>过夜费(1天)</span><span>4.56元</span>
+                                    </div>
+                                    <div class="flex justify-between pt-3 border-t border-slate-mid font-bold">
+                                        <span>总费用</span><span class="text-flash-orange">10.71元</span>
+                                    </div>
+                                    <div class="flex justify-between font-bold text-green-400">
+                                        <span>实际盈利</span><span>89.29元</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-6">说明：盈利部分可在下次交易时抵扣费用，体验金本金不可提现。</p>
+                    </div>
+                </div>
+                
+                <!-- 场景二 -->
+                <div id="case-2" class="case-content hidden">
+                    <div class="bg-slate-dark rounded-2xl p-8">
+                        <div class="flex items-center mb-6">
+                            <span class="bg-flash-orange text-white text-sm font-bold px-3 py-1 rounded-full mr-4">场景二</span>
+                            <h3 class="text-xl font-bold">加仓操作降低成本</h3>
+                        </div>
+                        <p class="text-gray-400 mb-6"><strong>背景：</strong>李女士买入某股票1000股，成本价10元，股价下跌至9.5元，想通过加仓降低成本。</p>
+                        
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-bold text-flash-orange mb-4">操作步骤</h4>
+                                <ol class="space-y-2 text-sm text-gray-300">
+                                    <li>1. 首次买入：1000股×10元=10000元市值</li>
+                                    <li>2. 使用8倍杠杆，保证金1250元</li>
+                                    <li>3. 股价下跌至9.5元，再买入1000股</li>
+                                    <li>4. 加仓成本：1000股×9.5元=9500元</li>
+                                    <li>5. 追加保证金：9500÷8=1187.5元</li>
+                                </ol>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-energy-yellow mb-4">成本价计算</h4>
+                                <div class="space-y-2 text-sm">
+                                    <div class="flex justify-between text-gray-400">
+                                        <span>总股数</span><span>2000股</span>
+                                    </div>
+                                    <div class="flex justify-between text-gray-400">
+                                        <span>总成本</span><span>19500元</span>
+                                    </div>
+                                    <div class="flex justify-between pt-3 border-t border-slate-mid font-bold">
+                                        <span>新成本价</span><span class="text-green-400">9.75元</span>
+                                    </div>
+                                    <div class="flex justify-between text-gray-400 mt-4">
+                                        <span>若以10元卖出2000股</span><span class="text-green-400">盈利500元</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-6">说明：加仓可以有效降低持仓成本，但需要追加保证金。</p>
+                    </div>
+                </div>
+                
+                <!-- 场景三 -->
+                <div id="case-3" class="case-content hidden">
+                    <div class="bg-slate-dark rounded-2xl p-8">
+                        <div class="flex items-center mb-6">
+                            <span class="bg-flash-orange text-white text-sm font-bold px-3 py-1 rounded-full mr-4">场景三</span>
+                            <h3 class="text-xl font-bold">止盈止损自动平仓</h3>
+                        </div>
+                        <p class="text-gray-400 mb-6"><strong>背景：</strong>王先生买入某股票，设置止盈止损价位，希望自动控制风险。</p>
+                        
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-bold text-flash-orange mb-4">操作步骤</h4>
+                                <ol class="space-y-2 text-sm text-gray-300">
+                                    <li>1. 买入某股票，成本价10元</li>
+                                    <li>2. 设置止盈价12元，止损价9元</li>
+                                    <li>3. 设置后长期有效，跨交易日有效</li>
+                                    <li>4. 某日股价触及止损价9元</li>
+                                    <li>5. 系统自动提交市价卖出订单</li>
+                                </ol>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-energy-yellow mb-4">重要说明</h4>
+                                <ul class="space-y-2 text-sm text-gray-300">
+                                    <li>• 止盈止损在买一价达到设定价位时触发</li>
+                                    <li>• 触发后按市价成交，成交价可能略有差异</li>
+                                    <li>• 设置后长期有效，直至触发或手动删除</li>
+                                    <li>• 如果触发后下单失败，需重新设置</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 场景四 -->
+                <div id="case-4" class="case-content hidden">
+                    <div class="bg-slate-dark rounded-2xl p-8">
+                        <div class="flex items-center mb-6">
+                            <span class="bg-flash-orange text-white text-sm font-bold px-3 py-1 rounded-full mr-4">场景四</span>
+                            <h3 class="text-xl font-bold">周末持仓费用计算</h3>
+                        </div>
+                        <p class="text-gray-400 mb-6"><strong>背景：</strong>赵先生周五买入股票，周一卖出，想了解费用情况。</p>
+                        
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-bold text-flash-orange mb-4">操作步骤</h4>
+                                <ol class="space-y-2 text-sm text-gray-300">
+                                    <li>1. 周五买入某股票，市值10000元</li>
+                                    <li>2. 使用10倍杠杆，保证金1000元</li>
+                                    <li>3. 周五持仓过夜，收取1个交易日过夜费</li>
+                                    <li>4. 周六、周日持仓，不收取过夜费</li>
+                                    <li>5. 周一卖出</li>
+                                </ol>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-energy-yellow mb-4">费用计算</h4>
+                                <div class="space-y-2 text-sm">
+                                    <div class="flex justify-between text-gray-400">
+                                        <span>买入手续费</span><span>10元</span>
+                                    </div>
+                                    <div class="flex justify-between text-gray-400">
+                                        <span>过夜费(仅周五1天)</span><span>19元</span>
+                                    </div>
+                                    <div class="flex justify-between text-green-400">
+                                        <span>周末两天</span><span>0元(免息)</span>
+                                    </div>
+                                    <div class="flex justify-between text-gray-400">
+                                        <span>卖出手续费</span><span>11元</span>
+                                    </div>
+                                    <div class="flex justify-between text-gray-400">
+                                        <span>印花税</span><span>5.5元</span>
+                                    </div>
+                                    <div class="flex justify-between pt-3 border-t border-slate-mid font-bold">
+                                        <span>总费用</span><span class="text-flash-orange">45.5元</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-green-400 mt-6">节假日免息是闪配宝的重要优势，可以大幅降低持仓成本！</p>
+                    </div>
+                </div>
+                
+                <!-- 场景五 -->
+                <div id="case-5" class="case-content hidden">
+                    <div class="bg-slate-dark rounded-2xl p-8">
+                        <div class="flex items-center mb-6">
+                            <span class="bg-flash-orange text-white text-sm font-bold px-3 py-1 rounded-full mr-4">场景五</span>
+                            <h3 class="text-xl font-bold">穿仓情况处理</h3>
+                        </div>
+                        <p class="text-gray-400 mb-6"><strong>背景：</strong>孙先生买入某股票后，股价大幅下跌，亏损超过保证金。</p>
+                        
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-bold text-flash-orange mb-4">情况说明</h4>
+                                <ol class="space-y-2 text-sm text-gray-300">
+                                    <li>1. 买入某股票，市值10000元</li>
+                                    <li>2. 使用10倍杠杆，保证金1000元</li>
+                                    <li>3. 股价大幅下跌，亏损达到1500元</li>
+                                    <li>4. 触发强平，系统自动卖出</li>
+                                    <li>5. 穿仓500元（1500-1000）</li>
+                                </ol>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-green-400 mb-4">处理方式</h4>
+                                <ul class="space-y-3 text-sm text-gray-300">
+                                    <li class="flex items-start">
+                                        <span class="text-green-400 mr-2">✓</span>
+                                        <span>穿仓部分500元由平台承担</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-400 mr-2">✓</span>
+                                        <span>用户仅需支付强平产生的手续费和印花税</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-yellow-400 mr-2">!</span>
+                                        <span>如果穿仓后无法卖出，过夜费由用户承担</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="text-sm text-green-400 mt-6">穿仓保护是闪配宝的重要保障，保护用户不会因极端行情承担超出保证金的损失。</p>
+                    </div>
+                </div>
+                
+                <!-- 场景六 -->
+                <div id="case-6" class="case-content hidden">
+                    <div class="bg-slate-dark rounded-2xl p-8">
+                        <div class="flex items-center mb-6">
+                            <span class="bg-flash-orange text-white text-sm font-bold px-3 py-1 rounded-full mr-4">场景六</span>
+                            <h3 class="text-xl font-bold">避免强平的操作</h3>
+                        </div>
+                        <p class="text-gray-400 mb-6"><strong>背景：</strong>周先生持仓股票下跌，接近强平线，想避免被强平。</p>
+                        
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div class="bg-dark-blue/50 rounded-xl p-6">
+                                <h4 class="font-bold text-flash-orange mb-4">方案一：追加保证金</h4>
+                                <ul class="space-y-2 text-sm text-gray-300">
+                                    <li>• 原持仓：市值10000元，保证金1000元</li>
+                                    <li>• 股价下跌，保证金比例降至4%</li>
+                                    <li>• 追加保证金500元</li>
+                                    <li>• 新保证金比例：15%（安全）</li>
+                                </ul>
+                            </div>
+                            <div class="bg-dark-blue/50 rounded-xl p-6">
+                                <h4 class="font-bold text-energy-yellow mb-4">方案二：补仓</h4>
+                                <ul class="space-y-2 text-sm text-gray-300">
+                                    <li>• 原持仓：1000股，成本价10元</li>
+                                    <li>• 股价下跌至9元，再买入500股</li>
+                                    <li>• 新成本价：9.67元</li>
+                                    <li>• 降低持仓成本，提高安全边际</li>
+                                </ul>
+                            </div>
+                            <div class="bg-dark-blue/50 rounded-xl p-6">
+                                <h4 class="font-bold text-green-400 mb-4">方案三：及时止损</h4>
+                                <ul class="space-y-2 text-sm text-gray-300">
+                                    <li>• 设置止损价位</li>
+                                    <li>• 股价触及止损价时自动卖出</li>
+                                    <li>• 避免进一步亏损</li>
+                                    <li>• 保护剩余本金</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-6">说明：及时追加保证金或补仓可以有效避免强平，但需要账户有足够资金。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12.6. 充值提现详细流程 -->
+    <section id="funds" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title text-center mb-6">闪配宝APP充值提现流程</h2>
+            <p class="section-desc text-center mb-16">闪配宝APP资金流转透明，操作简单便捷</p>
+            
+            <div class="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <!-- 充值流程 -->
+                <div class="bg-slate-dark rounded-2xl p-8">
+                    <h3 class="text-xl font-bold mb-6 flex items-center text-flash-orange">
+                        <span class="text-2xl mr-3">💳</span>充值流程
+                    </h3>
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-flash-orange/20 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <span class="text-flash-orange font-bold text-sm">1</span>
+                            </div>
+                            <p class="text-sm text-gray-300">进入【我的】-【充值】</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-flash-orange/20 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <span class="text-flash-orange font-bold text-sm">2</span>
+                            </div>
+                            <p class="text-sm text-gray-300">输入充值金额（最低200元）</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-flash-orange/20 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <span class="text-flash-orange font-bold text-sm">3</span>
+                            </div>
+                            <p class="text-sm text-gray-300">选择充值方式，复制账号</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-flash-orange/20 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <span class="text-flash-orange font-bold text-sm">4</span>
+                            </div>
+                            <p class="text-sm text-gray-300">点击"提交订单"</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-flash-orange/20 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <span class="text-flash-orange font-bold text-sm">5</span>
+                            </div>
+                            <p class="text-sm text-gray-300">打开银行APP或支付宝，粘贴账号转账</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-flash-orange/20 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <span class="text-flash-orange font-bold text-sm">6</span>
+                            </div>
+                            <p class="text-sm text-gray-300">转账完成后，将截图发给客服</p>
+                        </div>
+                    </div>
+                    <div class="bg-dark-blue/50 rounded-xl p-4">
+                        <h4 class="font-bold text-sm mb-3">充值说明</h4>
+                        <ul class="space-y-2 text-xs text-gray-400">
+                            <li>• 处理时间：交易日 9:00-17:00</li>
+                            <li>• 到账时间：预计5分钟内到账</li>
+                            <li>• 最低金额：200元人民币</li>
+                            <li>• 如5分钟后未到账，请联系客服</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- 提现流程 -->
+                <div class="bg-slate-dark rounded-2xl p-8">
+                    <h3 class="text-xl font-bold mb-6 flex items-center text-energy-yellow">
+                        <span class="text-2xl mr-3">💰</span>提现流程
+                    </h3>
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-energy-yellow/20 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <span class="text-energy-yellow font-bold text-sm">1</span>
+                            </div>
+                            <p class="text-sm text-gray-300">进入【我的】-【提现】</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-energy-yellow/20 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <span class="text-energy-yellow font-bold text-sm">2</span>
+                            </div>
+                            <p class="text-sm text-gray-300">如未绑定银行卡，先绑定银行卡</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-energy-yellow/20 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <span class="text-energy-yellow font-bold text-sm">3</span>
+                            </div>
+                            <p class="text-sm text-gray-300">输入提现金额或选择"全部提现"</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-energy-yellow/20 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <span class="text-energy-yellow font-bold text-sm">4</span>
+                            </div>
+                            <p class="text-sm text-gray-300">输入提现密码</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-energy-yellow/20 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <span class="text-energy-yellow font-bold text-sm">5</span>
+                            </div>
+                            <p class="text-sm text-gray-300">点击"确认提现"</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-energy-yellow/20 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <span class="text-energy-yellow font-bold text-sm">6</span>
+                            </div>
+                            <p class="text-sm text-gray-300">等待到账（通常10分钟内）</p>
+                        </div>
+                    </div>
+                    <div class="bg-dark-blue/50 rounded-xl p-4">
+                        <h4 class="font-bold text-sm mb-3">提现说明</h4>
+                        <ul class="space-y-2 text-xs text-gray-400">
+                            <li>• 处理时间：交易日 10:00-16:00</li>
+                            <li>• 到账时间：T+0当日到账，一般10分钟</li>
+                            <li>• 16:00后申请下个交易日9:00后处理</li>
+                            <li>• 提现费用：<span class="text-green-400">完全免费</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 银行卡绑定 -->
+            <div class="mt-12 max-w-5xl mx-auto">
+                <div class="bg-slate-dark rounded-2xl p-8">
+                    <h3 class="text-xl font-bold mb-8 text-center flex items-center justify-center text-green-400">
+                        <span class="text-2xl mr-3">🏦</span>银行卡绑定流程（9步完成）
+                    </h3>
+                    
+                    <!-- 步骤流程图 -->
+                    <div class="grid grid-cols-3 lg:grid-cols-9 gap-3 mb-8">
+                        <!-- 第1步 -->
+                        <div class="flex flex-col items-center group">
+                            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 text-white font-bold flex items-center justify-center text-lg shadow-lg shadow-purple-500/30 mb-2 group-hover:scale-110 transition-transform">1</div>
+                            <p class="text-xs text-gray-300 text-center font-medium">进入<br><span class="text-purple-400">【我的】</span></p>
+                        </div>
+                        <!-- 第2步 -->
+                        <div class="flex flex-col items-center group">
+                            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 text-white font-bold flex items-center justify-center text-lg shadow-lg shadow-purple-500/30 mb-2 group-hover:scale-110 transition-transform">2</div>
+                            <p class="text-xs text-gray-300 text-center font-medium">点击<br><span class="text-purple-400">【提现】</span></p>
+                        </div>
+                        <!-- 第3步 -->
+                        <div class="flex flex-col items-center group">
+                            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 text-white font-bold flex items-center justify-center text-lg shadow-lg shadow-purple-500/30 mb-2 group-hover:scale-110 transition-transform">3</div>
+                            <p class="text-xs text-gray-300 text-center font-medium">点击<br><span class="text-purple-400">【去绑卡】</span></p>
+                        </div>
+                        <!-- 第4步 -->
+                        <div class="flex flex-col items-center group">
+                            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-pink-500 to-pink-600 text-white font-bold flex items-center justify-center text-lg shadow-lg shadow-pink-500/30 mb-2 group-hover:scale-110 transition-transform">4</div>
+                            <p class="text-xs text-gray-300 text-center font-medium">输入<br><span class="text-pink-400">银行卡号</span></p>
+                        </div>
+                        <!-- 第5步 -->
+                        <div class="flex flex-col items-center group">
+                            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-pink-500 to-pink-600 text-white font-bold flex items-center justify-center text-lg shadow-lg shadow-pink-500/30 mb-2 group-hover:scale-110 transition-transform">5</div>
+                            <p class="text-xs text-gray-300 text-center font-medium">选择<br><span class="text-pink-400">开户银行</span></p>
+                        </div>
+                        <!-- 第6步 -->
+                        <div class="flex flex-col items-center group">
+                            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-pink-500 to-pink-600 text-white font-bold flex items-center justify-center text-lg shadow-lg shadow-pink-500/30 mb-2 group-hover:scale-110 transition-transform">6</div>
+                            <p class="text-xs text-gray-300 text-center font-medium">点击<br><span class="text-pink-400">【提交】</span></p>
+                        </div>
+                        <!-- 第7步 -->
+                        <div class="flex flex-col items-center group">
+                            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-green-500 to-green-600 text-white font-bold flex items-center justify-center text-lg shadow-lg shadow-green-500/30 mb-2 group-hover:scale-110 transition-transform">7</div>
+                            <p class="text-xs text-gray-300 text-center font-medium">输入<br><span class="text-green-400">验证码</span></p>
+                        </div>
+                        <!-- 第8步 -->
+                        <div class="flex flex-col items-center group">
+                            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-green-500 to-green-600 text-white font-bold flex items-center justify-center text-lg shadow-lg shadow-green-500/30 mb-2 group-hover:scale-110 transition-transform">8</div>
+                            <p class="text-xs text-gray-300 text-center font-medium">设置<br><span class="text-green-400">提现密码</span></p>
+                        </div>
+                        <!-- 第9步 -->
+                        <div class="flex flex-col items-center group">
+                            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-green-500 to-green-600 text-white font-bold flex items-center justify-center text-lg shadow-lg shadow-green-500/30 mb-2 group-hover:scale-110 transition-transform">✓</div>
+                            <p class="text-xs text-gray-300 text-center font-medium">绑定<br><span class="text-green-400">成功！</span></p>
+                        </div>
+                    </div>
+                    
+                    <!-- 阶段说明卡片 -->
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="bg-purple-500/10 border border-purple-500/30 rounded-xl p-4">
+                            <div class="flex items-center mb-3">
+                                <span class="bg-purple-500 text-white text-xs font-bold px-2 py-1 rounded mr-2">阶段一</span>
+                                <span class="text-purple-400 font-bold text-sm">进入绑卡页面</span>
+                            </div>
+                            <div class="space-y-2 text-sm text-gray-300">
+                                <div class="flex items-center"><span class="text-purple-400 mr-2">①</span> 打开APP，进入【我的】页面</div>
+                                <div class="flex items-center"><span class="text-purple-400 mr-2">②</span> 点击【提现】按钮</div>
+                                <div class="flex items-center"><span class="text-purple-400 mr-2">③</span> 点击【去绑卡】按钮</div>
+                            </div>
+                        </div>
+                        <div class="bg-pink-500/10 border border-pink-500/30 rounded-xl p-4">
+                            <div class="flex items-center mb-3">
+                                <span class="bg-pink-500 text-white text-xs font-bold px-2 py-1 rounded mr-2">阶段二</span>
+                                <span class="text-pink-400 font-bold text-sm">填写银行卡信息</span>
+                            </div>
+                            <div class="space-y-2 text-sm text-gray-300">
+                                <div class="flex items-center"><span class="text-pink-400 mr-2">④</span> 输入您的银行卡号</div>
+                                <div class="flex items-center"><span class="text-pink-400 mr-2">⑤</span> 选择对应的开户银行</div>
+                                <div class="flex items-center"><span class="text-pink-400 mr-2">⑥</span> 点击【提交】按钮</div>
+                            </div>
+                        </div>
+                        <div class="bg-green-500/10 border border-green-500/30 rounded-xl p-4">
+                            <div class="flex items-center mb-3">
+                                <span class="bg-green-500 text-white text-xs font-bold px-2 py-1 rounded mr-2">阶段三</span>
+                                <span class="text-green-400 font-bold text-sm">完成身份验证</span>
+                            </div>
+                            <div class="space-y-2 text-sm text-gray-300">
+                                <div class="flex items-center"><span class="text-green-400 mr-2">⑦</span> 输入手机收到的验证码</div>
+                                <div class="flex items-center"><span class="text-green-400 mr-2">⑧</span> 设置6位数提现密码</div>
+                                <div class="flex items-center"><span class="text-green-400 mr-2">⑨</span> 绑定成功，可以提现了！</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 bg-amber-500/10 border border-amber-500/30 rounded-lg p-4 text-center">
+                        <p class="text-amber-400 text-sm font-medium">⚠️ 重要提示：只支持绑定1张银行卡。如需更换银行卡，请联系客服申请解绑后重新绑定。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 资金安全说明 -->
+            <div class="mt-8 max-w-3xl mx-auto">
+                <div class="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-xl p-6">
+                    <h4 class="font-bold text-center text-green-400 mb-4">资金安全说明</h4>
+                    <div class="grid sm:grid-cols-3 gap-4 text-center text-sm text-gray-300">
+                        <div>
+                            <span class="text-green-400">✓</span> 充值提现均不涉及手续费
+                        </div>
+                        <div>
+                            <span class="text-green-400">✓</span> 资金流转透明，每笔操作有记录
+                        </div>
+                        <div>
+                            <span class="text-green-400">✓</span> 如遇问题，可随时联系客服
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 13. 实盘交易验证 -->
+    <section class="py-20 bg-slate-dark/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-block bg-green-500/20 text-green-400 text-sm font-bold px-4 py-2 rounded-full mb-6">核心保障</div>
+                <h2 class="section-title">闪配宝100%实盘交易，交割单可查</h2>
+                <p class="section-desc max-w-3xl mx-auto">闪配宝所有交易均进入真实A股市场。我们不与用户做对手盘，不靠吃用户本金盈利，只赚取透明的服务费。</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <div class="verify-card">
+                    <div class="verify-step">1</div>
+                    <h4 class="font-bold mb-2">记录交易信息</h4>
+                    <p class="text-sm text-gray-400">记录买入股票代码、数量、成交价格、成交时间</p>
+                </div>
+                <div class="verify-card">
+                    <div class="verify-step">2</div>
+                    <h4 class="font-bold mb-2">申请交割单</h4>
+                    <p class="text-sm text-gray-400">联系客服，提供会员号，盘中申请收盘后发送</p>
+                </div>
+                <div class="verify-card">
+                    <div class="verify-step">3</div>
+                    <h4 class="font-bold mb-2">查询同花顺L2</h4>
+                    <p class="text-sm text-gray-400">打开同花顺软件，查看Level2交易数据</p>
+                </div>
+                <div class="verify-card">
+                    <div class="verify-step">4</div>
+                    <h4 class="font-bold mb-2">核对验证</h4>
+                    <p class="text-sm text-gray-400">核对成交时间、价格、数量、方向是否一致</p>
+                </div>
+            </div>
+            
+            <!-- 同花顺版本说明和交割单说明 -->
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
+                <div class="bg-slate-dark rounded-2xl p-8">
+                    <h3 class="text-xl font-bold mb-6 text-flash-orange">同花顺版本说明</h3>
+                    <div class="space-y-6">
+                        <div class="bg-dark-blue/50 rounded-xl p-4">
+                            <h4 class="font-bold mb-3 flex items-center">
+                                <span class="text-gray-400 mr-2">免费版</span>
+                            </h4>
+                            <ul class="space-y-2 text-sm text-gray-400">
+                                <li>• 数据经过合并处理</li>
+                                <li>• 非L2会员的交易数据会被合并展示</li>
+                                <li>• 可验证基本信息，细节可能不够精确</li>
+                            </ul>
+                        </div>
+                        <div class="bg-flash-orange/10 border border-flash-orange/30 rounded-xl p-4">
+                            <h4 class="font-bold mb-3 flex items-center">
+                                <span class="text-flash-orange mr-2">L2会员版</span>
+                                <span class="text-xs bg-flash-orange text-white px-2 py-0.5 rounded">推荐</span>
+                            </h4>
+                            <ul class="space-y-2 text-sm text-gray-300">
+                                <li>• 可查询所有详细数据</li>
+                                <li>• 包括具体时间点、手数、价格</li>
+                                <li>• 建议使用L2进行精确验证</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-dark rounded-2xl p-8">
+                    <h3 class="text-xl font-bold mb-6 text-energy-yellow">交割单说明</h3>
+                    <div class="space-y-6">
+                        <div class="bg-dark-blue/50 rounded-xl p-4">
+                            <h4 class="font-bold mb-3">交割单格式</h4>
+                            <ul class="space-y-2 text-sm text-gray-400">
+                                <li>• 交割单就是券商账户中的成交明细</li>
+                                <li>• <span class="text-yellow-400">没有盖章（这是正常的券商格式）</span></li>
+                                <li>• 可以通过券商系统查询验证</li>
+                            </ul>
+                        </div>
+                        <div class="bg-dark-blue/50 rounded-xl p-4">
+                            <h4 class="font-bold mb-3">交割单申请时间</h4>
+                            <ul class="space-y-2 text-sm text-gray-400">
+                                <li>• 建议在盘中申请，一般收盘后发给您</li>
+                                <li>• 需要资方在券商账户查询，需一定处理时间</li>
+                                <li>• 如需加急，可联系客服说明</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-slate-dark rounded-2xl p-8 max-w-3xl mx-auto">
+                <h3 class="text-xl font-bold text-center mb-6 text-flash-orange">信任承诺</h3>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <span class="text-green-400 text-xl mr-3">✓</span>
+                        <span>坚决实盘，拒绝虚拟盘。交易指令全部进入实盘市场。</span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-green-400 text-xl mr-3">✓</span>
+                        <span>交割单支持通过券商系统查询验证。</span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-green-400 text-xl mr-3">✓</span>
+                        <span>交易数据可与同花顺实时比对。</span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-green-400 text-xl mr-3">✓</span>
+                        <span>不在后台修改K线或操纵价格。</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 14. 安全保障 -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title text-center mb-16">闪配宝APP安全保障</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="security-card">
+                    <div class="security-icon">🛡️</div>
+                    <h4 class="font-bold mb-2">穿仓保护</h4>
+                    <p class="text-sm text-gray-400">亏损超过保证金部分由平台承担，保护您的本金安全</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-icon">⚡</div>
+                    <h4 class="font-bold mb-2">快速提现</h4>
+                    <p class="text-sm text-gray-400">交易日16:00前申请，当日处理；提现完全免费</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-icon">🔒</div>
+                    <h4 class="font-bold mb-2">账户安全</h4>
+                    <p class="text-sm text-gray-400">支持提现密码设置，可在安全中心重置密码</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-icon">📋</div>
+                    <h4 class="font-bold mb-2">透明规则</h4>
+                    <p class="text-sm text-gray-400">费率精确到小数点，每笔扣费可用计算器反推验证</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-icon">📝</div>
+                    <h4 class="font-bold mb-2">个人协议</h4>
+                    <p class="text-sm text-gray-400">如需要，可与资方签署个人合作协议</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-icon">✅</div>
+                    <h4 class="font-bold mb-2">实盘保障</h4>
+                    <p class="text-sm text-gray-400">不与用户做对手盘，只赚取透明的服务费</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-icon">📊</div>
+                    <h4 class="font-bold mb-2">数据可验证</h4>
+                    <p class="text-sm text-gray-400">交易数据可与同花顺比对，交割单可查</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-icon">🏢</div>
+                    <h4 class="font-bold mb-2">长久经营</h4>
+                    <p class="text-sm text-gray-400">细水长流的资金撮合模式，非庞氏骗局</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 15. 坦诚说明区 -->
+    <section class="py-20 bg-slate-dark/30">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="section-title">闪配宝坦诚相告</h2>
+                <p class="section-desc">闪配宝因为身份特殊，所以我们比正规军更敢讲真话</p>
+            </div>
+            
+            <div class="space-y-8">
+                <div class="bg-slate-dark rounded-2xl p-8">
+                    <h3 class="text-xl font-bold mb-4 text-flash-orange">我们是什么</h3>
+                    <p class="text-gray-300">闪配宝是个人对个人的配资撮合工具。我们是个人经营行为，没有注册实体公司。资金进入私人账户是正常的业务形态。</p>
+                </div>
+                
+                <div class="bg-slate-dark rounded-2xl p-8">
+                    <h3 class="text-xl font-bold mb-4 text-energy-yellow">我们不是什么</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>• 我们不是券商，没有金融牌照</li>
+                        <li>• 我们没有注册实体公司</li>
+                        <li>• 我们的官网没有工信部备案</li>
+                        <li>• 我们的APP没有上架应用市场</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-slate-dark rounded-2xl p-8">
+                    <h3 class="text-xl font-bold mb-4 text-green-400">为什么敢这么说</h3>
+                    <p class="text-gray-300 mb-4">因为我们做的是实盘交易。我们的商业模式是赚取服务费（利息+手续费），而不是吃用户的本金。只有用户资金安全进出，平台才能持续获得收益。</p>
+                    <p class="text-gray-300">您有权通过查询交割单来验证交易的实盘性质。如需要，可与资方签署个人合作协议。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 16. 下载指南 -->
+    <section id="download" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title text-center mb-6">如何下载闪配宝APP？</h2>
+            <p class="section-desc text-center mb-4">为确保下载正版官方应用，请通过以下渠道下载</p>
+            <p class="text-center text-yellow-400 text-sm mb-12">⚠️ 应用市场暂未上架，请通过官方渠道下载</p>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
+                <div class="bg-slate-dark rounded-2xl p-8">
+                    <h3 class="text-xl font-bold mb-4 text-flash-orange">方法一：百度搜索下载（推荐）</h3>
+                    <ol class="space-y-3 text-gray-300">
+                        <li class="flex items-start">
+                            <span class="bg-flash-orange text-white text-sm w-6 h-6 rounded-full flex items-center justify-center mr-3 flex-shrink-0">1</span>
+                            <span>打开百度APP</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-flash-orange text-white text-sm w-6 h-6 rounded-full flex items-center justify-center mr-3 flex-shrink-0">2</span>
+                            <span>搜索"闪配宝"</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-flash-orange text-white text-sm w-6 h-6 rounded-full flex items-center justify-center mr-3 flex-shrink-0">3</span>
+                            <span>点击带有"官网"标识的链接</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-flash-orange text-white text-sm w-6 h-6 rounded-full flex items-center justify-center mr-3 flex-shrink-0">4</span>
+                            <span>选择对应版本下载（安卓/iOS）</span>
+                        </li>
+                    </ol>
+                </div>
+                <div class="bg-slate-dark rounded-2xl p-8">
+                    <h3 class="text-xl font-bold mb-4 text-energy-yellow">方法二：配查查平台下载</h3>
+                    <ol class="space-y-3 text-gray-300">
+                        <li class="flex items-start">
+                            <span class="bg-energy-yellow text-dark-blue text-sm w-6 h-6 rounded-full flex items-center justify-center mr-3 flex-shrink-0">1</span>
+                            <span>百度搜索"配查查"</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-energy-yellow text-dark-blue text-sm w-6 h-6 rounded-full flex items-center justify-center mr-3 flex-shrink-0">2</span>
+                            <span>在配查查内搜索"闪配宝"</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-energy-yellow text-dark-blue text-sm w-6 h-6 rounded-full flex items-center justify-center mr-3 flex-shrink-0">3</span>
+                            <span>点击"闪配宝APP官网链接"</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-energy-yellow text-dark-blue text-sm w-6 h-6 rounded-full flex items-center justify-center mr-3 flex-shrink-0">4</span>
+                            <span>选择对应版本下载</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            
+            <!-- 安装指南 -->
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-green-500/10 border border-green-500/30 rounded-2xl p-8">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <svg class="w-8 h-8 mr-3 text-green-400" fill="currentColor" viewBox="0 0 24 24"><path d="M17.523 2H6.477C5.768 2 5.5 2.768 5.5 3.477v17.046c0 .709.268 1.477.977 1.477h11.046c.709 0 .977-.768.977-1.477V3.477C18.5 2.768 18.232 2 17.523 2zM12 20.5a1 1 0 110-2 1 1 0 010 2zM16 17H8V5h8v12z"/></svg>
+                        安卓安装步骤
+                    </h3>
+                    <ol class="space-y-2 text-sm text-gray-300">
+                        <li>1. 下载APK安装包</li>
+                        <li>2. 打开安装包，出现安全提醒时点击"允许"</li>
+                        <li>3. 勾选"了解此应用未经检测可能存在的风险"</li>
+                        <li>4. 点击"继续安装"</li>
+                        <li>5. 安装成功后点击"打开"</li>
+                    </ol>
+                    <a href="https://bmdyk.cn/" target="_blank" rel="noopener noreferrer" class="btn-primary w-full text-center mt-6 block">安卓版下载</a>
+                </div>
+                <div class="bg-blue-500/10 border border-blue-500/30 rounded-2xl p-8">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <svg class="w-8 h-8 mr-3 text-blue-400" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                        苹果安装步骤
+                    </h3>
+                    <ol class="space-y-2 text-sm text-gray-300">
+                        <li>1. 下载iOS版本，点击"安装"</li>
+                        <li>2. 回到手机桌面，看到APP图标</li>
+                        <li>3. 点击APP，出现"未受信任的企业级开发者"提示</li>
+                        <li>4. 进入【设置】-【通用】-【VPN与设备管理】</li>
+                        <li>5. 点击"信任此企业的开发证书"</li>
+                        <li>6. 回到桌面，点击APP即可使用</li>
+                    </ol>
+                    <a href="https://bmdyk.cn/" target="_blank" rel="noopener noreferrer" class="btn-secondary w-full text-center mt-6 block border-blue-400 text-blue-400 hover:bg-blue-400/10">iOS版下载</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 17. 常见问题 FAQ -->
+    <section id="faq" class="py-20 bg-slate-dark/30">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title text-center mb-6">闪配宝APP常见问题</h2>
+            <p class="section-desc text-center mb-12">按分类查找您关于闪配宝APP的常见问题</p>
+            
+            <!-- FAQ分类Tab -->
+            <div class="flex flex-wrap justify-center gap-2 mb-10">
+                <button class="faq-tab active" data-category="trading" onclick="showFaqCategory('trading')">关于交易</button>
+                <button class="faq-tab" data-category="fees" onclick="showFaqCategory('fees')">关于费用</button>
+                <button class="faq-tab" data-category="account" onclick="showFaqCategory('account')">关于账户</button>
+                <button class="faq-tab" data-category="leverage" onclick="showFaqCategory('leverage')">关于杠杆</button>
+                <button class="faq-tab" data-category="funds" onclick="showFaqCategory('funds')">充值提现</button>
+                <button class="faq-tab" data-category="delivery" onclick="showFaqCategory('delivery')">关于交割单</button>
+                <button class="faq-tab" data-category="risk" onclick="showFaqCategory('risk')">风控规则</button>
+                <button class="faq-tab" data-category="rights" onclick="showFaqCategory('rights')">持仓权益</button>
+                <button class="faq-tab" data-category="limits" onclick="showFaqCategory('limits')">交易限制</button>
+            </div>
+            
+            <!-- 关于交易 -->
+            <div id="faq-trading" class="faq-category space-y-4">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>闪配宝是实盘交易吗？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>是的，闪配宝所有交易均为真实A股交易，交割单可通过券商系统查询验证，数据可与同花顺比对。</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>可以交易哪些股票？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>支持沪深主板、创业板、中小板股票。ST、*ST及北交所股票暂不支持。</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>支持集合竞价吗？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>支持，闪配宝APP支持在9:25-9:30期间使用预约买入/卖出功能下单。</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>预约买卖和券商挂单有什么区别？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>预约买卖是平台盯盘功能，价格触发后再报送券商成交；券商挂单是直接进入交易所排队。未报状态时在L2查不到是正常的。</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>下单后可以撤单吗？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>预约买卖在"未报"和"已报"状态时可撤单；市价委托不支持手动撤单。</p></div>
+                </div>
+            </div>
+            
+            <!-- 关于费用 -->
+            <div id="faq-fees" class="faq-category space-y-4 hidden">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>利息怎么收取？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>按配资金额的万分之19每日收取，仅交易日计息，周末和节假日免息。</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>提现需要手续费吗？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>闪配宝提现完全免费，无任何手续费。</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>穿仓了需要赔钱吗？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>穿仓亏损由平台承担，您仅需支付强平产生的手续费和印花税。</p></div>
+                </div>
+            </div>
+            
+            <!-- 关于账户 -->
+            <div id="faq-account" class="faq-category space-y-4 hidden">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>体验金怎么使用？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>注册实名后自动获得240元，无需充值即可交易。盈利可抵扣后续交易费用，限持仓一天，8天内有效。</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>最低充值多少？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>最低充值200元人民币。</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>提现多久到账？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>交易日16:00前申请当日处理，16:00后下一交易日9:00后处理。通常10分钟内到账。</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>忘记提现密码怎么办？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>在闪配宝APP中前往【个人中心】-【安全中心】-【提现密码】重置。</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>银行卡可以绑定几张？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>只能绑定1张银行卡。如需更换，请联系客服申请解绑。</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>为什么应用市场搜不到？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>由于行业特殊性，闪配宝APP暂未上架各大应用市场。请通过百度搜索"闪配宝"访问官网下载。</p></div>
+                </div>
+            </div>
+            
+            <!-- 关于杠杆 -->
+            <div id="faq-leverage" class="faq-category space-y-4 hidden">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>可以1倍、2倍买入吗？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>闪配宝APP支持5倍、8倍、10倍三档杠杆。如果您想降低杠杆，可以在买入后通过追加保证金来调整杠杆比例。</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>如何降低杠杆倍数？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>在闪配宝APP买入后，您可以随时追加保证金。追加保证金会降低您的杠杆比例，从而降低被强平的风险。</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>为什么最高只有10倍杠杆？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>我们做的是实盘交易，为降低风险，最高提供10倍杠杆。过高的杠杆会放大风险，不利于资金安全。</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>部分股票为什么只支持5倍或8倍杠杆？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>部分高风险股票（如涨跌停股票、新股等）为控制风险，系统会限制杠杆倍数，以页面显示为准。</p></div>
+                </div>
+            </div>
+            
+            <!-- 充值提现 -->
+            <div id="faq-funds" class="faq-category space-y-4 hidden">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>充值到私人账户安全吗？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>闪配宝是个人对个人的撮合模式，资金进入私人账户是正常的业务形态。如您有需要，可与资方签署个人合作协议。平台承诺实盘交易，不靠吃用户本金盈利。</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>为什么转账到私人账户？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>闪配宝是个人经营行为，没有注册公司，所以不会出现企业转账。这是配资行业的常见模式。</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>充值后多久可以交易？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>充值通常在5分钟内到账，到账后即可立即使用进行交易。</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>充值处理时间是什么时候？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>充值处理时间为交易日9:00-17:00。非交易日不处理充值业务。</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>银行卡失效了怎么办？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>如绑定银行卡失效，需联系客服申请解绑，然后重新绑定新卡。只支持绑定1张银行卡。</p></div>
+                </div>
+            </div>
+            
+            <!-- 关于交割单 -->
+            <div id="faq-delivery" class="faq-category space-y-4 hidden">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>交割单可以作假吗？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>我们的交易是完全进入实盘的，交割单可以通过券商系统查询验证，数据可与同花顺比对，无法作假。</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>什么时候可以申请交割单？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>如需交割单，请在盘中申请，一般收盘后会发给您。因为需要资方在券商账户查询，建议提前申请。</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>交割单有盖章吗？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>交割单就是券商账户中的成交明细，没有盖章。这是正常的券商交割单格式。</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>同花顺免费版能查到我的交易吗？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>同花顺免费版的数据是经过合并处理的，不是L2会员的交易数据会被合并展示。L2会员可查询所有数据（具体时间点、手数、价格）。建议使用同花顺L2会员版本进行验证。</p></div>
+                </div>
+            </div>
+            
+            <!-- 风控规则 -->
+            <div id="faq-risk" class="faq-category space-y-4 hidden">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>强平线是怎么计算的？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>强平线计算公式为：（保证金+浮动盈亏）/ 买入金额。盘中需≥3%，尾盘需≥6%（创业板为10%）。买入金额=持仓股数×买入均价。</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>如何避免被强平？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>您可以在触发平仓前，通过手动补充保证金或补仓来调整平仓线。追加保证金会降低杠杆比例，提高安全边际。</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>连续涨跌停有什么限制？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>连续3个交易日涨跌停，第4个交易日不可交易；连续4个交易日涨跌停，第5-6个交易日不可交易；连续5个交易日涨跌停，第6-8个交易日不可交易。</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>为什么14:55后不能交易？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>系统会在14:55之后进行订单结算，对持仓进行递延判定，对不符合递延条件的系统会进行处理，因此不支持交易。请在该时间段关注持仓情况。</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>平台总额限额是什么意思？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>单支票平台总额限额300万，是指当前APP的所有人对这个股票的持仓总额上限。这是平台级别的风控措施。</p></div>
+                </div>
+            </div>
+            
+            <!-- 持仓权益 -->
+            <div id="faq-rights" class="faq-category space-y-4 hidden">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>股票分红怎么处理？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>系统会自动根据分红数据，计算应得分红资金，分红资金会加入到该笔持仓的保证金中。在股权登记日收盘时您还有持仓，系统会在当日23点自动将分红派发到该笔持仓的保证金里。</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>送股转股怎么处理？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>不管是送股、转股、或是配股，系统会根据相应政策自动计算出股数，持仓股数会产生变化。扩股部分上市日方可交易，此前无法卖出。</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>分红要扣税吗？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>是的，在闪配宝APP中分红会扣除20%的税。分红金额会自动加入持仓保证金中。</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>除权除息怎么处理？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>除权除息、分红赠配的股票我们和券商的处理方式是一样的。分红以现金充值的方式追加到您的保证金中。</p></div>
+                </div>
+            </div>
+            
+            <!-- 交易限制 -->
+            <div id="faq-limits" class="faq-category space-y-4 hidden">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>为什么不能买ST股票？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>ST股票是被股民抛弃的股票，有退市风险。ST是亏损了两年，*ST是连续三年亏损被警告，有退市的风险。为保护用户资金安全，平台禁止交易ST、*ST等高风险股票。</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>科创板可以交易吗？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>暂不支持科创板股票交易。</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>可转债、ETF可以交易吗？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>暂不支持可转债、ETF交易。平台仅支持A股股票交易。</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>为什么午间11:30-13:00可以下单但无法撤单？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>午间时段市价买卖下单，于下午开盘后进行成交结算，下单后无法手动撤单。这是系统结算机制决定的。</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>集合竞价可以撤单吗？</span>
+                        <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer"><p>9:15-9:20可以撤单，9:20-9:25不能撤单。9:25以成交量最大的价格为开盘价。</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 18. 关于闪配宝 -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <img src="images/spb-logo.png" alt="闪配宝品牌Logo - 闪电到账配你所需" class="w-24 h-24 mx-auto mb-6" width="96" height="96" loading="lazy">
+                <h2 class="section-title">关于闪配宝</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto mb-16">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-flash-orange">品牌释义</h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><strong class="text-energy-yellow">"闪"</strong>：快速到账，像闪电一样及时抓住机会</li>
+                        <li><strong class="text-energy-yellow">"配"</strong>：股票配资，资金支持</li>
+                        <li><strong class="text-energy-yellow">"宝"</strong>：可靠、安全、值得信赖的资金助手</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-flash-orange">品牌定位</h3>
+                    <p class="text-gray-300 mb-4">股票资金辅助平台，主打"快到账、低门槛、灵活配"</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-flash-orange/20 text-flash-orange px-3 py-1 rounded-full text-sm">快到账</span>
+                        <span class="bg-flash-orange/20 text-flash-orange px-3 py-1 rounded-full text-sm">低门槛</span>
+                        <span class="bg-flash-orange/20 text-flash-orange px-3 py-1 rounded-full text-sm">灵活配</span>
+                        <span class="bg-flash-orange/20 text-flash-orange px-3 py-1 rounded-full text-sm">高杠杆</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto mb-16">
+                <div class="bg-slate-dark rounded-2xl p-8">
+                    <h3 class="text-xl font-bold mb-4">使命</h3>
+                    <p class="text-gray-300">让每一个炒股者都能灵活、安全地获取资金支持</p>
+                </div>
+                <div class="bg-slate-dark rounded-2xl p-8">
+                    <h3 class="text-xl font-bold mb-4">愿景</h3>
+                    <p class="text-gray-300">成为中国散户最信赖的炒股资金服务平台</p>
+                </div>
+            </div>
+            
+            <!-- 品牌价值观 -->
+            <div class="max-w-6xl mx-auto">
+                <h3 class="text-2xl font-bold text-center mb-10">品牌价值观</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-slate-dark rounded-2xl p-6 border-t-4 border-flash-orange">
+                        <div class="text-3xl mb-3 text-flash-orange">
+                            <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                        </div>
+                        <h4 class="text-lg font-bold mb-3 text-flash-orange">共赢</h4>
+                        <p class="text-sm text-gray-400">不做零和博弈的庄家，只做助您盈利的伙伴。我们的收益源于用户的交易频次，而非用户的亏损本金。只有用户在股市赚到钱，平台才能长期赚取服务费。</p>
+                    </div>
+                    <div class="bg-slate-dark rounded-2xl p-6 border-t-4 border-energy-yellow">
+                        <div class="text-3xl mb-3 text-energy-yellow">
+                            <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
+                        </div>
+                        <h4 class="text-lg font-bold mb-3 text-energy-yellow">坦诚</h4>
+                        <p class="text-sm text-gray-400">因为身份特殊，所以我们比正规军更敢讲真话。我们承认配资业务处于监管灰色地带，因此更要用坦诚来打破信任壁垒。掩盖风险才是最大的风险。</p>
+                    </div>
+                    <div class="bg-slate-dark rounded-2xl p-6 border-t-4 border-green-400">
+                        <div class="text-3xl mb-3 text-green-400">
+                            <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                        </div>
+                        <h4 class="text-lg font-bold mb-3 text-green-400">劝善</h4>
+                        <p class="text-sm text-gray-400">宁可少做一个客户，也不坑一个家庭。配资是把双刃剑，不适合所有人。我们的责任是筛选出有能力驾驭杠杆的人，而不是诱导无知者入局。</p>
+                    </div>
+                    <div class="bg-slate-dark rounded-2xl p-6 border-t-4 border-blue-400">
+                        <div class="text-3xl mb-3 text-blue-400">
+                            <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                        </div>
+                        <h4 class="text-lg font-bold mb-3 text-blue-400">透明</h4>
+                        <p class="text-sm text-gray-400">规则无黑箱，每一分钱都算得清清楚楚。在缺乏官方背书的情况下，只有把所有细节都摊在阳光下，让用户自己去算、自己去查，才能建立真正的信任。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-gray-400">运营地点：<span class="text-white">中国上海</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 19. 底部下载CTA -->
+    <section class="py-20 bg-gradient-to-r from-flash-orange to-energy-yellow">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl sm:text-4xl font-black text-dark-blue mb-4">立即下载闪配宝</h2>
+            <p class="text-xl text-dark-blue/80 mb-8">注册即送240元体验金，零成本体验实盘交易</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://bmdyk.cn/" target="_blank" rel="noopener noreferrer" class="bg-dark-blue text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-slate-dark transition-colors inline-flex items-center justify-center">
+                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M17.523 2H6.477C5.768 2 5.5 2.768 5.5 3.477v17.046c0 .709.268 1.477.977 1.477h11.046c.709 0 .977-.768.977-1.477V3.477C18.5 2.768 18.232 2 17.523 2zM12 20.5a1 1 0 110-2 1 1 0 010 2zM16 17H8V5h8v12z"/></svg>
+                    安卓下载
+                </a>
+                <a href="https://bmdyk.cn/" target="_blank" rel="noopener noreferrer" class="bg-white/20 text-dark-blue border-2 border-dark-blue px-10 py-4 rounded-xl font-bold text-lg hover:bg-white/30 transition-colors inline-flex items-center justify-center">
+                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                    iOS下载
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 20. 风险提示 -->
+    <section id="risk" class="py-16 bg-red-500/10 border-t border-b border-red-500/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-2xl font-bold text-red-400 mb-4 flex items-center justify-center">
+                <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                </svg>
+                风险提示
+            </h3>
+            <p class="text-gray-300 mb-8 text-center max-w-3xl mx-auto">
+                股票配资是高风险的投资杠杆行为。杠杆交易会放大收益，同时也会放大亏损。您可能面临损失全部保证金的风险。请务必谨慎评估自身的风险承受能力，理性投资，量力而行。
+            </p>
+            
+            <!-- 重要说明 -->
+            <div class="bg-slate-dark/50 rounded-xl p-6 max-w-3xl mx-auto mb-12">
+                <h4 class="font-bold text-gray-300 mb-3">重要说明：</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li>• 该产品运营方未公开其商事主体名称与营业执照信息</li>
+                    <li>• 该产品相关官网未进行工信部备案</li>
+                    <li>• 该产品未在国内外任何主流应用市场上架</li>
+                    <li>• 该产品运营方未宣称持有任何金融业务相关牌照</li>
+                </ul>
+                <div class="mt-4 pt-4 border-t border-slate-mid">
+                    <p class="text-sm text-gray-400">• 您有权通过查询交割单来验证交易的实盘性质</p>
+                    <p class="text-sm text-gray-400">• 请仔细阅读并理解用户协议中的所有条款</p>
+                </div>
+            </div>
+            
+            <!-- 操作技巧与建议 -->
+            <div class="max-w-6xl mx-auto">
+                <h3 class="text-xl font-bold text-center mb-10 text-energy-yellow">操作技巧与建议</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- 新手交易建议 -->
+                    <div class="bg-slate-dark/80 rounded-xl p-6">
+                        <h4 class="font-bold mb-4 text-flash-orange flex items-center">
+                            <span class="text-xl mr-2">🎯</span>新手交易建议
+                        </h4>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li>• 先用体验金熟悉操作，了解交易流程</li>
+                            <li>• 即使充值，也建议从小额开始</li>
+                            <li>• 了解股票交易基础知识，理解杠杆风险</li>
+                            <li>• 养成设置止盈止损的习惯，控制风险</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 杠杆选择建议 -->
+                    <div class="bg-slate-dark/80 rounded-xl p-6">
+                        <h4 class="font-bold mb-4 text-energy-yellow flex items-center">
+                            <span class="text-xl mr-2">⚖️</span>杠杆选择建议
+                        </h4>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li>• <span class="text-green-400">保守型</span>：5倍杠杆，风险较低</li>
+                            <li>• <span class="text-yellow-400">平衡型</span>：8倍杠杆，风险收益平衡</li>
+                            <li>• <span class="text-red-400">激进型</span>：10倍杠杆，适合有经验者</li>
+                            <li>• 买入后可通过追加保证金降低杠杆</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 风险控制建议 -->
+                    <div class="bg-slate-dark/80 rounded-xl p-6">
+                        <h4 class="font-bold mb-4 text-red-400 flex items-center">
+                            <span class="text-xl mr-2">🛡️</span>风险控制建议
+                        </h4>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li>• 提前设置止盈止损价位，自动控制风险</li>
+                            <li>• 随时关注剩余保证金比例</li>
+                            <li>• 当保证金比例较低时，及时追加</li>
+                            <li>• 不要把所有资金投入一只股票</li>
+                            <li>• 不要满仓操作，保留资金缓冲</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 资金管理建议 -->
+                    <div class="bg-slate-dark/80 rounded-xl p-6">
+                        <h4 class="font-bold mb-4 text-green-400 flex items-center">
+                            <span class="text-xl mr-2">💰</span>资金管理建议
+                        </h4>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li>• 根据风险承受能力合理规划投资资金</li>
+                            <li>• 不要把所有资金都用于配资，预留应急</li>
+                            <li>• 盈利达到预期时，及时止盈落袋为安</li>
+                            <li>• 亏损达到止损线时，及时止损</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 避免强平的技巧 -->
+                    <div class="bg-slate-dark/80 rounded-xl p-6">
+                        <h4 class="font-bold mb-4 text-blue-400 flex items-center">
+                            <span class="text-xl mr-2">⚠️</span>避免强平的技巧
+                        </h4>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li>• 当保证金比例接近强平线时，及时追加</li>
+                            <li>• 通过加仓降低持仓成本，提高安全边际</li>
+                            <li>• 提前设置止损价位，避免进一步亏损</li>
+                            <li>• 密切关注市场行情，及时调整策略</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 费用优化建议 -->
+                    <div class="bg-slate-dark/80 rounded-xl p-6">
+                        <h4 class="font-bold mb-4 text-purple-400 flex items-center">
+                            <span class="text-xl mr-2">💡</span>费用优化建议
+                        </h4>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li>• 合理安排持仓时间，利用节假日免息</li>
+                            <li>• 避免频繁交易，减少手续费支出</li>
+                            <li>• 根据资金需求合理选择杠杆</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- 21. 页脚 -->
+    <footer class="py-16 bg-dark-blue">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+                <!-- 品牌 -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="images/spb-logo.png" alt="闪配宝Logo" class="h-12 w-12" width="48" height="48" loading="lazy">
+                        <span class="text-2xl font-bold bg-gradient-to-r from-flash-orange to-energy-yellow bg-clip-text text-transparent">闪配宝</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">闪配宝APP - 闪电到账，配你所需</p>
+                    <p class="text-sm text-gray-500">闪配宝运营地：中国上海</p>
+                </div>
+                
+                <!-- 产品服务 -->
+                <div>
+                    <h4 class="font-bold mb-4">产品服务</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#features" class="hover:text-flash-orange transition-colors">产品功能</a></li>
+                        <li><a href="#fees" class="hover:text-flash-orange transition-colors">费用说明</a></li>
+                        <li><a href="#cases" class="hover:text-flash-orange transition-colors">交易案例</a></li>
+                        <li><a href="#experience" class="hover:text-flash-orange transition-colors">体验金活动</a></li>
+                    </ul>
+                </div>
+                
+                <!-- 使用帮助 -->
+                <div>
+                    <h4 class="font-bold mb-4">使用帮助</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#download" class="hover:text-flash-orange transition-colors">下载指南</a></li>
+                        <li><a href="#guide" class="hover:text-flash-orange transition-colors">新手教程</a></li>
+                        <li><a href="#funds" class="hover:text-flash-orange transition-colors">充值提现</a></li>
+                        <li><a href="#faq" class="hover:text-flash-orange transition-colors">常见问答</a></li>
+                    </ul>
+                </div>
+                
+                <!-- 关于我们 -->
+                <div>
+                    <h4 class="font-bold mb-4">关于我们</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#about" class="hover:text-flash-orange transition-colors">品牌介绍</a></li>
+                        <li><a href="#faq" class="hover:text-flash-orange transition-colors">联系客服</a></li>
+                        <li><a href="#risk" class="hover:text-flash-orange transition-colors">风险提示</a></li>
+                        <li><a href="#faq" class="hover:text-flash-orange transition-colors">隐私政策</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-mid pt-8 text-center">
+                <p class="text-sm text-gray-500">闪配宝APP | A股股票配资平台 | 闪电到账，配你所需 | 运营地：中国上海</p>
+                <p class="text-xs text-gray-600 mt-2">本网站仅供产品介绍，不构成任何投资建议。投资有风险，入市需谨慎。</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- 本地化的交互脚本 -->
+    <script src="js/script.js"></script>
+</body>
+</html>
